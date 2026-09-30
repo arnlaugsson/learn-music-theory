@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Keys and Chords Gym</title>
+<meta name="description" content="Guided practice for key signatures, scales, chords and minor keys.">
+<meta name="theme-color" content="#1B3A57">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B3A57'/%3E%3Ctext x='16' y='25' font-size='24' text-anchor='middle' fill='white'%3E%E2%99%AF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow column, tabbed drills; a practice-room tool you open daily. Sharp keys run warm, flat keys run cool, everywhere. */
+@font-face{font-family:'KCGMusic';src:url(data:font/woff2;base64,d09GMgABAAAAAAtwABAAAAAAFnQAAAsXAAIAxQAAAAAAAAAAAAAAAAAAAAAAAAAAGyAcQgZgADwINAmcDBEICoVghTUBNgIkAwwLCAAEIAWDZgcgDIEnGy0VIxE2a48SAf1lgjlh5yvUghFjJgptwiIs6wgX3o7QZrwcrw+FRXHZbPe5r/yvHSHJLDzP2/Weex9nPwKh3Cqc+XgbSS1cgRXLlGSrSjVd1Jn5/MtmAvsvHGkFRWJ3ECqp0+uvBGDSWk5y2UPYJy4xOHTq60yFLPw/2vopRSUW5IaHWAazwbKGSoJm2GGL+hf1dNXJ4KbK0vkvEFiynAffMvUKBMmD9nYZG4CHazvqPmJNPERKIb6mRKZuGTMJcf7+11pp/+vuY3VhjyAcChOhY8xsz25quncOeCa8hDczIWCP8mSYFZELG5P4WBerczqG7Hh/M61uKIypEp2PkYcy7fgmCFChJxnANI4vB0FYgLLkEu4fnFNHwNUKVve1NwLCGkc3aR60vt3RMGiLpbN50NauDtuGuMHDrVbhKg70qC4AMPn5wbIMklABWufUOqvKOVQB8Y+fLmKBG/+f27im/+0A+K16tzumXX0enXP7EsQEW+iIL5WxPgz6DgUUFHnT++4CRHT/0Wzf6EUtvogj5Q/Sf5rkK9vq8/KbbeXMhvxn2jqYEnhOsyw9+Yfw7gnmw8fE0jZjb2Wl4fkV9u6/LUFiW9p35z14B4c2HUFCKzFAoF1WAYZ58wED6n8aK7vX4oSMKiVWXpnEOmgS5ttt4RvMSdcjt9sjNxoskc7woG/1j+Hq+sFBmT6LY5aWYzcycJd+5FGnhkKSgBEUTIsUmhOCl3Xqxf8dkj+OY2mWs+UM8yh5DM+vPyWyxw1vyl12PXullbVSce0tq46xrmcMitSMOJvTc5T079FKw7Ca5KqC6HafdktshVackjP1PrDjcwkeErhcK+9b7mTNYPOi+xfLkuIR/5RYc+67DEXOHlD+jGhazAEFzYR41wuLLxOWRWyLzvsMlYAJt5Ep8tXqRXVKd21nvnx0oFJjqK4PfhpqaP//pahzo47kV6m8dN3rnCz7LPYeEhQOl4gpNwtYwOHZERxmsr2ORRPoE3VwbwX1V8DqBhzI2hVCLv+JWCUhzl7JJG1lOt3JxejMCW0Wz/jEIW/9RLJ9KY+mMHCIeNFs6FX1YLeiFpBu2tvsAeZgOMOeqtiVgL2F/i5gowsKpUNf5GcwI75HL5N35vMZH4hQuXHET50GYkBFIuJjcJdEZDET1/CAOBZIYJmg3FX/RGxDr5KwaPjQbhDI7priydtUZTDNxwiGto1QlnyVnrzZtjhfeTZijop08s5K5/tDNZJEBoewxxotEC8LrZkw/CVNwhdEPA5DVbtk3PUG1bLt+olDah68mYgLYgmhGwjWpoTwgRXoYFOIYGeklPafrMBahY/eJlKLmhFaJDCoRJW/5Y11iV7buRZjRIDyp4ZqzSeC39g+mgMaFcXZQGllRGXGVGEGVZlQjSmqM5MazKIms6nFnHmTMPyvi1mevE2mBvp6tRwbmOqs0uJ30umqEfHXY22s0Sb8TEL191aO6/mHDtroQtGDog/FAIoRKEahGINiHIoJaGIGahOWZgOFctHEhOgkpHEqzORs8xyiVtSL0w3MQ1oomnHrbtgb+6ZTaOc9LYQ38RqOHWXcjZjvVpVWZ+lC9tJehGfTaRJL0FXL5y5jbdzJkc6TQ2GLbL8v9C8ASHftRl1Kq772yArUamG/Aw7LbxRYRbO3DayRxiAu6V91HZUl4bgaLUAvwv5oGJ7Ywjql785nyOK4ltLqrjOBDQBNySLiiJPdvfpCxePZH8OMSe2wdkxhs03NuixMi9SvLT5uk9i7Sz9Fd6j7KXnHVo7RhEsNPQ7H5qWciLD18t0u/Kl0DWHpDcWuf8eEnbN1OW2Qx+1M7Adnm3c3nOFyDjsutRy0aKFtVBZRZY2hvNMNEs1CshHMlTFH3knX0ZXOgS0sxpKEyo61N0JV2224/dZcpFIZxcadPtOZMNJ3BE+pUWvewY3zhQqFi+nedo++u4SDuNFsj0RLW8o37p5N9CMHo5+wXVbLmSHO78HUoPiX55SYXrrXOanNTZ1LK2cD+73Tv3Yvd37Au8kcF3wINkKh9whsxtBuMscOcVgj9WGyYW4HHbdB56edkS92+BZdlwm6uKlVYzfk/8FPUN0Rj0Cn9D+xyGLpk3wfO7O1G87nS4fPdtLpPGycRUWdeUbr8LY8gN2AAOd28bJvHfEKt3bi1SvdabnIXqKCnBZWc+wKrC90fTvomanRfOhVtFpvkNAtCAhMnwhzHjDuhpgJSWohkDLRMhqMZ3I5kqIWAiUTvwpzAUDrBTUX0tRBoOVCuj4AgZ4LGeogMHLRJp2oMTNqzIIas6KmbTMmMLucyVELgZNJ1GUXEncjcQ8S9yLxBiTeiMSbkHgzUncL5hwYE8Boa63lbN1LtKFet4NuTqCmOjDnIA11VkDeVQGpuwuMlYoeMRa9YqzdVwSV+gFRJwZQLwZBpaEukMvDsMgxInKMihxjIse4yDEhckxWFZgSBaZFgRlRYFYUmBMF5kWRWMCcD/1m6zkb0OO8n1qPX5CbnZqt0VDRZ4PW3vAdKO79sL4OFkCk/E/EpdYwggcCY7wESCMFC1x+flEztW12IDEsbPeMoQ6U/XjP/xnE2iiQsmjVZo5Wi4DZsBqdRqOLsCZa4udlQBHaGJbveoax7jByDml7mXV835lpCLa2iPXe8Tww8MbvPRyylXAFQleuapYo2H1+pQxyy+fZxt5m5Nz0M4tZfM6c/82qRJ1orTbpjzaN+WzfJMdcy8drlsgC5s1apn1XVvlXDo6S0iqiXSX4MOmt+wjzbUwSIufG2spZ+YvsAVzOkRdE/2oTvayFJhD2C9PqEgcN0uRoEkEoRZMpogIsHUsQEVF8VF58Ucj2CIZAw4zu3dk5kJKMU0qIEY/ugElbJBy9U++ESt5ArsPL0uU5eZrUpMc57FgNPut27ZND3561kjfxj+/+8L5nF9zMYRahc0TvR9K2OwyNFzX1tJYuOjduxvHSgoyj0UwOglMR+w81sBj/OL2oKWplrpZGxse4WGeeJAZ/DyFfV94MLPjjeRcQIqOaWFmvayUz+D31zHaOiaI8SRd5pHtM3RVdtxP/J3b5tzz2f8LbygcUAKBpTkesDwy7JFj2SlDW3NsnINopAIIQNgLJomTrCEF4E/0IvlhnrNdf1S3EP/dyK/FxOvPIxECfUo5k5+Xj0UhIQC90HRf4OBHdhR84y8YMOnxwfmMFBhPDQiAmitlUgSHElQSFODOvJhHp1Gp2DbushFhFqsrPyy1EQgN6oAEElKefM4c6TZFVXycizS+ADxWPXgN8usq6+Xfm72j/Jt8EwKMACPwd4wJ3MEo/TgDkcmOjCzDqfaomEZDGVzd8Bf2oxQ/lBaSzBPKksR6DAIFFpdVsBpyD9VChI7tDlUauDDWM4PpQy0A+DXXMkYSX8/QXLzRaaKWPdjy4cNNJFiQImiORhRyBY2QhLXTS4oppT8qLRm20bj1dq+umBS90kEWRDLeTVs+tAD9mu/BQ+LuwgsPGVE1oQ7NE5VTVbKkOTDVx6jvw7IOgsUnQmpPiwJWu1YiFdkjgIIyRyVTCQqRYVoRv3dUOsOPGJe8oa62Unm7vM63bPktXNMu/ghMLXQflFumB9N3fDREcZQrKyKVgKcZ+ulYQy9p8ucywvLRW5eaTH4AXUvU5KCcXnoXfP6+z4xwILbcSIRheKN4Oi1JZ1sUFLB9bHvk2AakrlAlw32vAQLqZB2dnqs/WzarrtIYVzbkaxDJAWph6rnDtuR50ALG8Tpu8Q17udiHCS+Pwq7Ccwu/ETZ9v8Lb/Gg9SAgAA) format('woff2');font-display:block}
+:root{
+  --bg:#ECEFF3; --panel:#FFFFFF; --ink:#14202C; --muted:#586676; --line:#D2D9E1;
+  --accent:#1B3A57; --accent-ink:#FFFFFF; --sharp:#B1432A; --flat:#2A63AC;
+  --ok:#1D7A4D; --bad:#B3261E; --staff:#14202C;
+  --key-w:#FFFFFF; --key-b:#18202A; --hint-w:#F5DC8E; --hint-b:#A97F10; --sel-w:#B9D1EA; --sel-b:#3D6E9E;
+  --display:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;
+  --body:'IBM Plex Sans',ui-sans-serif,system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1419; --panel:#182029; --ink:#E6ECF2; --muted:#95A3B2; --line:#2A3541;
+  --accent:#8DB6DF; --accent-ink:#0D1620; --sharp:#F0886C; --flat:#82B4F0;
+  --ok:#57C38C; --bad:#F28B83; --staff:#E6ECF2;
+  --key-w:#E8ECF1; --key-b:#0A0E13; --hint-w:#D9BE6A; --hint-b:#C29A1E; --sel-w:#7FA5CB; --sel-b:#6E9FCF; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1419; --panel:#182029; --ink:#E6ECF2; --muted:#95A3B2; --line:#2A3541;
+  --accent:#8DB6DF; --accent-ink:#0D1620; --sharp:#F0886C; --flat:#82B4F0;
+  --ok:#57C38C; --bad:#F28B83; --staff:#E6ECF2;
+  --key-w:#E8ECF1; --key-b:#0A0E13; --hint-w:#D9BE6A; --hint-b:#C29A1E; --sel-w:#7FA5CB; --sel-b:#6E9FCF; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);margin:0;padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:760px;margin:0 auto}
+h1{font:700 30px/1.1 var(--display);letter-spacing:-.01em;margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 16px}
+h2{font:700 19px/1.2 var(--display);margin:0 0 10px}
+h3{font:600 12px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--line);margin-bottom:16px;scrollbar-width:thin}
+.tab{flex:none;border:0;background:none;padding:10px 12px;font:600 14px var(--body);color:var(--muted);border-bottom:3px solid transparent;cursor:pointer}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tab:hover{color:var(--ink)}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.stack{display:flex;flex-direction:column;gap:14px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 12px;font:500 13px var(--body);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn{border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:8px 16px;font:600 14px var(--body);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.45;cursor:default}
+.q{margin:0 0 10px;font:600 17px/1.35 var(--display)}
+.ansrow{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:6px}
+.ansrow.c5{grid-template-columns:repeat(5,1fr)}
+.ansrow.c3{grid-template-columns:repeat(3,1fr)}
+.ansrow.c4{grid-template-columns:repeat(2,1fr)}
+.ansrow.one{grid-template-columns:repeat(7,1fr)}
+.ans{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:11px 2px;font:600 15px var(--body);cursor:pointer;min-width:0}
+.ans.sharp{color:var(--sharp)} .ans.flat{color:var(--flat)}
+.ans:hover:not(:disabled){border-color:var(--accent)}
+.ans.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.ans.bad{background:var(--bad);border-color:var(--bad);color:#fff}
+.ans:disabled{cursor:default}
+.fb{min-height:1.6em;margin:10px 0;font-size:14px}
+.fb.ok{color:var(--ok)} .fb.bad{color:var(--bad)}
+.fb b{font-weight:600}
+.muted{color:var(--muted)} .small{font-size:13px}
+.staff{width:100%;max-width:440px;height:auto;display:block;margin:0 0 10px}
+.staff line{stroke:var(--staff);stroke-width:1}
+.staff .clef{font-family:'KCGMusic',serif;fill:var(--staff)}
+.staff .lbl{font:500 8px var(--mono);fill:var(--muted);letter-spacing:.1em}
+.staff .acc path{stroke:var(--staff);fill:none;stroke-linecap:round}
+.staff .acc.ok path{stroke:var(--ok)} .staff .acc.bad path{stroke:var(--bad)}
+.staff .acc.ghost path{stroke:var(--muted);opacity:.55;stroke-dasharray:2 2}
+.staff.live .hit{fill:transparent;cursor:pointer}
+.staff.live .hit:hover{fill:color-mix(in srgb,var(--accent) 14%,transparent)}
+.kb{position:relative;display:flex;height:170px;user-select:none;-webkit-user-select:none;touch-action:manipulation;border:1px solid var(--line);border-radius:0 0 8px 8px;overflow:hidden;background:var(--key-w)}
+.wk{flex:1;min-width:0;border:0;background:var(--key-w);box-shadow:inset -1px 0 var(--line);display:flex;align-items:flex-end;justify-content:center;padding:0 0 6px;color:var(--muted);font:500 10px var(--mono);cursor:pointer}
+.bk{position:absolute;top:0;width:4.6%;height:60%;border:0;background:var(--key-b);border-radius:0 0 4px 4px;z-index:2;cursor:pointer;padding:0}
+.wk.hint{background:var(--hint-w)} .bk.hint{background:var(--hint-b)}
+.wk.sel{background:var(--sel-w)} .bk.sel{background:var(--sel-b)}
+.wk.f-ok,.bk.f-ok{background:var(--ok)} .wk.f-bad,.bk.f-bad{background:var(--bad)}
+.notes{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0;min-height:30px}
+.note{min-width:38px;text-align:center;border:1px dashed var(--line);border-radius:6px;padding:3px 6px;font:500 13px var(--mono);color:var(--muted)}
+.note.on{border-style:solid;border-color:var(--ok);color:var(--ink)}
+.bar{height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--accent);border-radius:4px}
+.prog{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;margin-bottom:12px}
+.prog .bar{grid-column:1 / -1}
+.num{font:500 13px var(--mono);color:var(--muted)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font:600 12px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.s{color:var(--sharp)} td.f{color:var(--flat)}
+td.mono{font-family:var(--mono)}
+select{font:500 14px var(--body);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+label.inl{display:inline-flex;gap:6px;align-items:center;font-size:14px}
+.tool{font-size:26px;line-height:1;padding:4px 16px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--panel);color:var(--ink);padding:7px 14px;font:500 14px var(--body);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.pathlist{display:flex;flex-direction:column;gap:8px}
+.les{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;width:100%;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:12px 14px;cursor:pointer;color:var(--ink);font:inherit}
+.les .no{width:32px;height:32px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;font:600 14px var(--mono)}
+.les.done .no{background:var(--ok);border-color:var(--ok);color:#fff}
+.les.next{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.les b{font:600 16px var(--display)}
+.tag{font:600 11px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+.dots{display:flex;gap:6px;margin:6px 0 14px}
+.dots i{width:24px;height:5px;border-radius:3px;background:var(--line)}
+.dots i.on{background:var(--accent)} .dots i.done{background:var(--ok)}
+.page p{max-width:62ch;margin:0 0 10px;line-height:1.6}
+.page .big{font:600 20px var(--display);letter-spacing:.02em}
+.callout{border-left:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 9%,transparent);padding:8px 12px;border-radius:0 8px 8px 0;margin:10px 0;max-width:62ch}
+.hintbox{border:1px dashed var(--accent);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:14px}
+.lsprog{display:flex;align-items:center;gap:10px;margin-bottom:14px}.lsprog .bar{flex:1}
+.kbmini{height:120px;margin:10px 0}
+.kbx{margin:10px 0}
+.steprow{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:10px 0;font:500 14px var(--mono)}
+.steprow span{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:4px 7px}
+.steprow span.acc-s{color:var(--sharp);border-color:var(--sharp)}
+.steprow i{font-style:normal;color:var(--accent);font-weight:600;font-size:12px}
+.ansrow.c2{grid-template-columns:repeat(2,1fr)}
+dl.gl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:6px 14px}dl.gl dt{font-weight:600}dl.gl dd{margin:0;color:var(--muted)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+  <h1>Keys and Chords Gym</h1>
+  <p class="sub">Key signatures, scales, triads and minor keys. Retrieval practice, not rereading.</p>
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+
+  <section id="p-path" hidden>
+    <div id="pathList"></div>
+    <div id="lessonView" hidden></div>
+  </section>
+
+  <section id="p-cards" hidden>
+    <div class="stack">
+      <div class="chips" id="deckChips" aria-label="Deck"></div>
+      <div class="card" id="cardBody"></div>
+    </div>
+  </section>
+
+  <section id="p-build" hidden>
+    <div class="card" id="buildBody"></div>
+  </section>
+
+  <section id="p-keys" hidden>
+    <div class="stack">
+      <div class="row">
+        <div class="seg" id="kMode"></div>
+        <label class="inl"><input type="checkbox" id="kHints"> Show answer notes</label>
+        <label class="inl"><input type="checkbox" id="kLabels" checked> Labels</label>
+      </div>
+      <div class="card">
+        <div id="kPrompt"></div>
+        <div class="kbwrap"><div class="kb" id="kb" aria-label="Keyboard, C4 to B5"></div></div>
+        <div id="kFb" class="fb" aria-live="polite"></div>
+        <div class="row" id="kBtns"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="p-ear" hidden>
+    <div class="card" id="earBody"></div>
+  </section>
+
+  <section id="p-progress" hidden>
+    <div class="card" id="progBody"></div>
+  </section>
+
+  <section id="p-ref" hidden>
+    <div class="stack">
+      <div class="card"><h2>Key signatures</h2><div class="tbl" id="refSigs"></div></div>
+      <div class="card"><h2>Order of accidentals</h2><div id="refOrder"></div></div>
+      <div class="card"><h2>Chords in a key</h2><div class="row" style="margin-bottom:10px"><select id="refKey" aria-label="Key"></select></div><div class="tbl" id="refChords"></div></div>
+      <div class="card"><h2>Glossary</h2><div id="refGloss"></div></div>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+function rnd(a){return a[Math.floor(Math.random()*a.length)]}
+function range(a,b){var o=[],d=a<=b?1:-1;for(var i=a;d>0?i<=b:i>=b;i+=d)o.push(i);return o}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+
+/* ---------- theory ---------- */
+var CLEFS=['treble','bass'];
+var L=['C','D','E','F','G','A','B'], NPC=[0,2,4,5,7,9,11];
+var MAJOR=[0,2,4,5,7,9,11], NMIN=[0,2,3,5,7,8,10], HMIN=[0,2,3,5,7,8,11], MMIN=[0,2,3,5,7,9,11];
+var MAJ_S=['C','G','D','A','E','B','F#','C#'], MAJ_F=['C','F','Bb','Eb','Ab','Db','Gb','Cb'];
+var MIN_S=['A','E','B','F#','C#','G#','D#','A#'], MIN_F=['A','D','G','C','F','Bb','Eb','Ab'];
+var ORD_S='FCGDAEB', ORD_F='BEADGCF';
+function fmt(n){return n[0]+n.slice(1).replace(/#/g,'♯').replace(/b/g,'♭')}
+function pcOf(name){var pc=NPC[L.indexOf(name[0])];for(var i=1;i<name.length;i++){if(name[i]==='#')pc++;else if(name[i]==='b')pc--}return((pc%12)+12)%12}
+function spell(tonic,ivs){var li=L.indexOf(tonic[0]),tp=pcOf(tonic);return ivs.map(function(iv,i){var k=(li+i)%7,off=(((tp+iv-NPC[k])%12)+12)%12;if(off>6)off-=12;return L[k]+(off>0?new Array(off+1).join('#'):new Array(-off+1).join('b'))})}
+var KEYS=range(-7,7).map(function(n){return{n:n,maj:n>=0?MAJ_S[n]:MAJ_F[-n],min:n>=0?MIN_S[n]:MIN_F[-n]}});
+function majName(n){return KEYS[n+7].maj} function minName(n){return KEYS[n+7].min}
+function sigLetters(n){return n>=0?ORD_S.slice(0,n).split(''):ORD_F.slice(0,-n).split('')}
+function sigText(n){return n===0?'no sharps or flats':sigLetters(n).map(function(l){return l+(n>0?'♯':'♭')}).join(' ')}
+function cnt(n){return n===0?'0':Math.abs(n)+(n>0?'♯':'♭')}
+var TR={s:[8,5,9,6,3,7,4],f:[4,7,3,6,2,5,1]};
+function stepsFor(clef,n){return(n>=0?TR.s.slice(0,n):TR.f.slice(0,-n)).map(function(s){return clef==='bass'?s-2:s})}
+var QN={M:'Major',m:'Minor',d:'Diminished'};
+function triad(scale,deg,thirdOverride){var r=scale[deg%7],t=thirdOverride||scale[(deg+2)%7],f=scale[(deg+4)%7];
+  var a=(pcOf(t)-pcOf(r)+12)%12,b=(pcOf(f)-pcOf(r)+12)%12,q=a===4?'M':(b===6?'d':'m');
+  return{root:r,notes:[r,t,f],q:q,name:r+(q==='m'?'m':q==='d'?'dim':'')}}
+var ROM=['I','II','III','IV','V','VI','VII'];
+function roman(deg,q){var r=ROM[deg];return(q==='M'?r:r.toLowerCase())+(q==='d'?'°':'')}
+function chordsOfKey(tonic,mode){
+  var sc=spell(tonic,mode==='major'?MAJOR:NMIN),out=[];
+  for(var d=0;d<7;d++){var c;
+    if(mode==='minor'&&d===4){var h=spell(tonic,HMIN);c=triad(sc,4,h[6])}else c=triad(sc,d);
+    c.roman=roman(d,c.q);out.push(c)}
+  if(mode==='minor'){var v=triad(sc,4);v.roman='v';out.push(v)}
+  return out}
+var TONICS=[];KEYS.forEach(function(k){TONICS.push({name:k.maj,mode:'major',n:k.n})});KEYS.forEach(function(k){TONICS.push({name:k.min,mode:'minor',n:k.n})});
+function keyLabel(name,mode){return fmt(name)+' '+mode}
+
+/* ---------- store ---------- */
+var S={cards:{},stats:{},lessons:{}};
+try{var raw=localStorage.getItem('kcg.v1');if(raw){var o=JSON.parse(raw);if(o&&typeof o==='object'){S.cards=o.cards||{};S.stats=o.stats||{};S.lessons=o.lessons||{}}}}catch(e){}
+function save(){try{localStorage.setItem('kcg.v1',JSON.stringify(S))}catch(e){}}
+function stat(k,ok){var s=S.stats[k]||(S.stats[k]={ok:0,total:0});s.total++;if(ok)s.ok++;save()}
+
+/* ---------- audio ---------- */
+var AC=null;
+function audio(){try{if(!AC)AC=new(window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();return AC}catch(e){return null}}
+function tone(midi,t,dur,vel){var ac=audio();if(!ac)return;t=t||0;dur=dur||1.1;vel=vel||0.22;
+  var f=440*Math.pow(2,(midi-69)/12),now=ac.currentTime+t,g=ac.createGain();
+  g.gain.setValueAtTime(0.0001,now);g.gain.linearRampToValueAtTime(vel,now+0.012);g.gain.exponentialRampToValueAtTime(0.0008,now+dur);
+  var o1=ac.createOscillator();o1.type='triangle';o1.frequency.value=f;
+  var o2=ac.createOscillator();o2.type='sine';o2.frequency.value=f*2;var g2=ac.createGain();g2.gain.value=0.2;
+  o1.connect(g);o2.connect(g2);g2.connect(g);g.connect(ac.destination);
+  o1.start(now);o2.start(now);o1.stop(now+dur+0.05);o2.stop(now+dur+0.05)}
+
+/* ---------- staff ---------- */
+function accG(type,x,y,cls){
+  var inner=type==='s'
+    ?'<path d="M-2.5 -9.5V9.5M2.5 -10.5V8.5" stroke-width="1.2"/><path d="M-5.5 -1.2L5.5 -4.2M-5.5 4.8L5.5 1.8" stroke-width="2.4"/>'
+    :'<path d="M-2.5 -14V5" stroke-width="1.3"/><path d="M-2.5 5C5 0.5 7.5 -6 -2.5 -3" stroke-width="1.6"/>';
+  return'<g class="acc '+(cls||'')+'" transform="translate('+x+' '+y+')">'+inner+'</g>'}
+function staffSVG(o){
+  var clef=o.clef||'treble',n=o.n||0,yb=92,sp=12,W=270,H=132,x0=70,dx=17,h='';
+  h+='<svg class="staff'+(o.live?' live':'')+'" viewBox="0 0 '+W+' '+H+'" data-clef="'+clef+'" role="img" aria-label="'+clef+' clef staff">';
+  for(var k=0;k<5;k++)h+='<line x1="4" x2="'+(W-4)+'" y1="'+(yb-k*sp)+'" y2="'+(yb-k*sp)+'"/>';
+  h+='<line x1="4" x2="4" y1="'+(yb-4*sp)+'" y2="'+yb+'"/>';
+  if(clef==='treble')h+='<text class="clef" x="12" y="'+(yb-sp)+'" font-size="45">𝄞</text>';
+  else h+='<text class="clef" x="12" y="'+(yb-4)+'" font-size="45">𝄢</text>';
+  h+='<text class="lbl" x="6" y="'+(H-6)+'">'+clef.toUpperCase()+'</text>';
+  var items=o.placed||(n===0?[]:stepsFor(clef,n).map(function(s){return{type:n>0?'s':'f',step:s}}));
+  if(o.ghost)o.ghost.forEach(function(g,i){h+=accG(g.type,x0+i*dx,yb-g.step*6,'ghost')});
+  items.forEach(function(g,i){h+=accG(g.type,x0+i*dx,yb-g.step*6,(o.marks&&o.marks[i])||'')});
+  if(o.live){for(var s=-1;s<=10;s++)h+='<rect class="hit" data-step="'+s+'" x="52" y="'+(yb-s*6-3)+'" width="'+(W-58)+'" height="6"/>'}
+  return h+'</svg>'}
+
+/* ---------- tabs ---------- */
+var TABS=[['path','Path'],['cards','Flashcards'],['build','Build'],['keys','Keyboard'],['ear','Ear'],['progress','Progress'],['ref','Reference']];
+var shown={};
+function showTab(id){
+  if(!$('#p-'+id))id='cards';
+  TABS.forEach(function(t){$('#p-'+t[0]).hidden=t[0]!==id});
+  $$('.tab').forEach(function(b){b.setAttribute('aria-selected',b.dataset.t===id?'true':'false')});
+  try{history.replaceState(null,'','#'+id)}catch(e){}
+  if(id==='progress')renderProgress();
+  if(id==='path')renderPath();
+  if(id==='keys'&&!shown.keys){shown.keys=1;newKeyEx()}
+}
+$('#tabs').innerHTML=TABS.map(function(t){return'<button class="tab" role="tab" data-t="'+t[0]+'" aria-selected="false">'+t[1]+'</button>'}).join('');
+$('#tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(b)showTab(b.dataset.t)});
+
+/* ---------- flashcards ---------- */
+function keyBtns(type){
+  function f(n){var nm=type==='maj'?majName(n):minName(n);return'<button class="ans '+(n>0?'sharp':n<0?'flat':'')+'" data-v="'+nm+'">'+fmt(nm)+(type==='min'?'m':'')+'</button>'}
+  return'<div class="ansrow">'+range(1,7).map(f).join('')+'</div><div class="ansrow">'+range(-1,-7).map(f).join('')+'</div><div class="ansrow one">'+f(0)+'</div>'}
+function answerHTML(set){
+  if(set==='majorKeys')return keyBtns('maj');
+  if(set==='minorKeys')return keyBtns('min');
+  if(set==='counts')return'<div class="ansrow c5">'+range(-7,7).map(function(n){return'<button class="ans '+(n>0?'sharp':n<0?'flat':'')+'" data-v="'+n+'">'+cnt(n)+'</button>'}).join('')+'</div>';
+  if(set==='letters')return'<div class="ansrow">'+L.map(function(l){return'<button class="ans" data-v="'+l+'">'+l+'</button>'}).join('')+'</div>';
+  if(set==='wh')return'<div class="ansrow c2">'+['Half step','Whole step'].map(function(l){return'<button class="ans" data-v="'+l+'">'+l+'</button>'}).join('')+'</div>';
+  return'<div class="ansrow c3">'+['Major','Minor','Diminished'].map(function(l){return'<button class="ans" data-v="'+l+'">'+l+'</button>'}).join('')+'</div>'}
+var DECKS=[
+ {id:'s2M',title:'Signature → major',make:function(){return range(-7,7).map(function(n){return{id:'s2M:'+n,set:'majorKeys',correct:majName(n),
+   prompt:function(){return'<p class="q">Which <b>major</b> key has this signature?</p>'+staffSVG({clef:rnd(CLEFS),n:n})},
+   why:cnt(n)+': '+sigText(n)+' → '+fmt(majName(n))+' major (relative minor '+fmt(minName(n))+'m).'}})}},
+ {id:'s2m',title:'Signature → minor',make:function(){return range(-7,7).map(function(n){return{id:'s2m:'+n,set:'minorKeys',correct:minName(n),
+   prompt:function(){return'<p class="q">Which <b>minor</b> key has this signature?</p>'+staffSVG({clef:rnd(CLEFS),n:n})},
+   why:cnt(n)+': '+sigText(n)+' → '+fmt(minName(n))+' minor (relative major '+fmt(majName(n))+').'}})}},
+ {id:'k2s',title:'Key → signature',make:function(){var o=[];range(-7,7).forEach(function(n){
+   o.push({id:'k2s:M:'+n,set:'counts',correct:String(n),prompt:function(){return'<p class="q">How many sharps or flats in <b>'+keyLabel(majName(n),'major')+'</b>?</p>'},why:fmt(majName(n))+' major: '+sigText(n)+'.'});
+   o.push({id:'k2s:m:'+n,set:'counts',correct:String(n),prompt:function(){return'<p class="q">How many sharps or flats in <b>'+keyLabel(minName(n),'minor')+'</b>?</p>'},why:fmt(minName(n))+' minor: '+sigText(n)+'.'})});return o}},
+ {id:'rel',title:'Relative keys',make:function(){var o=[];range(-7,7).forEach(function(n){
+   o.push({id:'relm:'+n,set:'minorKeys',correct:minName(n),prompt:function(){return'<p class="q">Relative minor of <b>'+keyLabel(majName(n),'major')+'</b>?</p>'},why:'6th degree of '+fmt(majName(n))+' major = '+fmt(minName(n))+' minor. Same signature.'});
+   o.push({id:'relM:'+n,set:'majorKeys',correct:majName(n),prompt:function(){return'<p class="q">Relative major of <b>'+keyLabel(minName(n),'minor')+'</b>?</p>'},why:'Three semitones above '+fmt(minName(n))+' = '+fmt(majName(n))+' major. Same signature.'})});return o}},
+ {id:'ord',title:'Order of accidentals',make:function(){var o=[];
+   for(var i=0;i<7;i++){(function(i){
+     o.push({id:'ord:s'+i,set:'letters',correct:ORD_S[i],prompt:function(){return'<p class="q">Sharp number <b>'+(i+1)+'</b> in the order of sharps?</p>'},why:'Sharps: F C G D A E B (Father Charles Goes Down And Ends Battle).'});
+     o.push({id:'ord:f'+i,set:'letters',correct:ORD_F[i],prompt:function(){return'<p class="q">Flat number <b>'+(i+1)+'</b> in the order of flats?</p>'},why:'Flats: B E A D G C F (Battle Ends And Down Goes Charles’s Father).'})})(i)}return o}},
+ {id:'qual',title:'Chord quality',make:function(){var o=[],MQ=['M','m','m','M','M','m','d'],NQ=['m','d','M','m','m','M','M'];
+   for(var d=0;d<7;d++){(function(d){
+     o.push({id:'qM:'+d,set:'quality',correct:QN[MQ[d]],prompt:function(){return'<p class="q">Triad on degree <b>'+(d+1)+'</b> of a <b>major</b> key: which quality?</p>'},why:'Major key: I M, ii m, iii m, IV M, V M, vi m, vii° dim.'});
+     o.push({id:'qm:'+d,set:'quality',correct:QN[NQ[d]],prompt:function(){return'<p class="q">Triad on degree <b>'+(d+1)+'</b> of a <b>natural minor</b> key: which quality?</p>'},why:'Natural minor: i m, ii° dim, III M, iv m, v m, VI M, VII M.'})})(d)}
+   o.push({id:'qh',set:'quality',correct:'Major',prompt:function(){return'<p class="q">The V chord in a <b>harmonic minor</b> key: which quality?</p>'},why:'Raising the 7th makes V major (E–G♯–B in A minor) and gives a leading tone.'});return o}}
+];
+var ALL=[];DECKS.forEach(function(d){d.make().forEach(function(it){it.deck=d.id;ALL.push(it)})});
+var INT=[0,0,10*60e3,864e5,3*864e5,7*864e5], WT=[6,5,4,3,2,1];
+function pick(pool,lastId){
+  var now=Date.now(),cand=pool.filter(function(i){return i.id!==lastId});if(!cand.length)cand=pool;
+  var due=cand.filter(function(i){var r=S.cards[i.id];return!r||r.box===0||now-r.last>=INT[r.box]});
+  var list=due.length?due:cand,tot=0,ws=list.map(function(i){var r=S.cards[i.id],w=WT[r?r.box:0];tot+=w;return w}),x=Math.random()*tot;
+  for(var k=0;k<list.length;k++){x-=ws[k];if(x<=0)return list[k]}return list[0]}
+function grade(id,ok){var r=S.cards[id]||(S.cards[id]={box:0,last:0,seen:0,ok:0});r.seen++;if(ok){r.ok++;r.box=Math.min(5,Math.max(1,r.box)+1)}else r.box=1;r.last=Date.now();save()}
+var F={deck:'all',cur:null,answered:false,last:null,timer:null};
+function renderDeckChips(){
+  var arr=[['all','All']].concat(DECKS.map(function(d){return[d.id,d.title]}));
+  $('#deckChips').innerHTML=arr.map(function(a){return'<button class="chip" data-d="'+a[0]+'" aria-pressed="'+(F.deck===a[0])+'">'+a[1]+'</button>'}).join('')}
+function nextCard(){
+  clearTimeout(F.timer);
+  var pool=F.deck==='all'?ALL:ALL.filter(function(i){return i.deck===F.deck});
+  F.cur=pick(pool,F.last&&F.last.id);F.last=F.cur;F.answered=false;
+  $('#cardBody').innerHTML=F.cur.prompt()+answerHTML(F.cur.set)+'<div class="fb" id="fb" aria-live="polite"></div><div class="row"><button class="btn" id="nextBtn" hidden>Next</button></div>'}
+function answerCard(v){
+  if(F.answered)return;F.answered=true;
+  var it=F.cur,ok=String(v)===String(it.correct);grade(it.id,ok);
+  $$('#cardBody .ans').forEach(function(b){b.disabled=true;if(b.dataset.v===String(it.correct))b.classList.add('ok');else if(b.dataset.v===String(v))b.classList.add('bad')});
+  var fb=$('#fb');fb.className='fb '+(ok?'ok':'bad');fb.innerHTML='<b>'+(ok?'Correct.':'Not quite.')+'</b> '+esc(it.why);
+  $('#nextBtn').hidden=false;$('#nextBtn').focus();
+  if(ok)F.timer=setTimeout(nextCard,1600)}
+$('#deckChips').addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;F.deck=b.dataset.d;renderDeckChips();nextCard()});
+$('#cardBody').addEventListener('click',function(e){var a=e.target.closest('.ans');if(a){answerCard(a.dataset.v);return}if(e.target.id==='nextBtn')nextCard()});
+
+/* ---------- build the signature ---------- */
+var B={n:0,mode:'major',clef:'treble',tool:'s',placed:[],checked:false,lastKey:null};
+function newBuild(){
+  var n,tries=0;do{n=rnd(range(-7,7).filter(function(x){return x!==0||Math.random()<.15}));tries++}while(B.lastKey===n+':'+B.mode&&tries<5);
+  B.n=n;B.mode=rnd(['major','minor']);B.clef=rnd(['treble','bass']);B.placed=[];B.checked=false;B.lastKey=n+':'+B.mode;B.tool='s';B.res=null;renderBuild()}
+function renderBuild(){
+  var name=B.mode==='major'?majName(B.n):minName(B.n),h='';
+  h+='<p class="q">Write the key signature of <b>'+keyLabel(name,B.mode)+'</b>.</p>';
+  h+='<div class="row" style="margin-bottom:10px"><span class="muted small">Pick ♯ or ♭, then click lines and spaces left to right.</span></div>';
+  h+='<div class="row" style="margin-bottom:10px"><button class="btn ghost tool" data-tool="s" aria-pressed="'+(B.tool==='s')+'" style="'+(B.tool==='s'?'border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)':'')+'" aria-label="Sharp">♯</button><button class="btn ghost tool" data-tool="f" aria-pressed="'+(B.tool==='f')+'" style="'+(B.tool==='f'?'border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)':'')+'" aria-label="Flat">♭</button>'
+    +'<button class="btn ghost" data-act="undo"'+(B.checked?' disabled':'')+'>Undo</button><button class="btn ghost" data-act="clear"'+(B.checked?' disabled':'')+'>Clear</button></div>';
+  var marks=B.res?B.res.marks:null,ghost=B.res&&!B.res.ok?B.res.exp:null;
+  h+=staffSVG({clef:B.clef,placed:B.placed,live:!B.checked,marks:marks,ghost:ghost});
+  h+='<div class="fb '+(B.res?(B.res.ok?'ok':'bad'):'')+'" aria-live="polite">'+(B.res?'<b>'+(B.res.ok?'Correct.':'Not quite.')+'</b> '+esc(B.res.msg):'')+'</div>';
+  h+='<div class="row"><button class="btn" data-act="check"'+(B.checked?' hidden':'')+'>Check</button><button class="btn" data-act="next"'+(B.checked?'':' hidden')+'>Next</button></div>';
+  $('#buildBody').innerHTML=h}
+function checkBuild(){
+  var t=B.n>0?'s':'f',exp=stepsFor(B.clef,B.n).map(function(s){return{type:t,step:s}});
+  var marks=B.placed.map(function(p,i){return exp[i]&&exp[i].type===p.type&&exp[i].step===p.step?'ok':'bad'});
+  var ok=B.placed.length===exp.length&&marks.every(function(m){return m==='ok'});
+  var msg=ok?sigText(B.n)+'.':(B.n===0?'This key has no accidentals.':'Expected '+sigText(B.n)+' in that order; dashed marks show the right places.');
+  if(!ok&&B.n!==0&&B.placed.length&&exp[0]&&B.placed.some(function(p){return p.type!==t}))msg='This is a '+(B.n>0?'sharp':'flat')+' key. '+msg;
+  B.checked=true;B.res={ok:ok,marks:marks,exp:exp,msg:msg};stat('build',ok);renderBuild()}
+$('#buildBody').addEventListener('click',function(e){
+  var t=e.target.closest('[data-tool]');if(t){B.tool=t.dataset.tool;renderBuild();return}
+  var a=e.target.closest('[data-act]');if(a){var k=a.dataset.act;
+    if(k==='undo'){B.placed.pop();renderBuild()}else if(k==='clear'){B.placed=[];renderBuild()}else if(k==='check')checkBuild();else if(k==='next')newBuild();return}
+  var r=e.target.closest('.hit');if(r&&!B.checked&&B.placed.length<7){B.placed.push({type:B.tool,step:+r.dataset.step});renderBuild()}});
+
+/* ---------- keyboard ---------- */
+var WN=['C','','D','','E','F','','G','','A','','B'];
+var PCN=['C','C♯/D♭','D','D♯/E♭','E','F','F♯/G♭','G','G♯/A♭','A','A♯/B♭','B'];
+function makeKB(el,onPress){
+  var wh=[],bl=[],m;for(m=60;m<=83;m++){(NPC.indexOf(m%12)>=0?wh:bl).push(m)}
+  var h='';wh.forEach(function(m){h+='<button class="wk" data-m="'+m+'" aria-label="'+PCN[m%12]+'"><span class="lab">'+WN[m%12]+(m%12===0?(Math.floor(m/12)-1):'')+'</span></button>'});
+  bl.forEach(function(m){var idx=wh.filter(function(w){return w<m}).length;h+='<button class="bk" data-m="'+m+'" style="left:'+((idx/wh.length*100)-2.3).toFixed(2)+'%" aria-label="'+PCN[m%12]+'"></button>'});
+  el.classList.add('kb');el.innerHTML=h;
+  el.addEventListener('pointerdown',function(e){var b=e.target.closest('[data-m]');if(!b)return;e.preventDefault();onPress(+b.dataset.m)});
+  return{el:el,
+    flash:function(m,c){var b=el.querySelector('[data-m="'+m+'"]');if(!b)return;b.classList.add(c);setTimeout(function(){b.classList.remove(c)},380)},
+    hints:function(pcs){$$('[data-m]',el).forEach(function(b){b.classList.toggle('hint',!!pcs&&pcs.indexOf(+b.dataset.m%12)>=0)})},
+    sel:function(arr){$$('[data-m]',el).forEach(function(b){b.classList.toggle('sel',arr.indexOf(+b.dataset.m)>=0)})}}}
+var KBmain=makeKB($('#kb'),function(m){pressKey(m)});
+function kbFlash(m,c){KBmain.flash(m,c)} function kbHints(p){KBmain.hints(p)} function kbSel(s){KBmain.sel(s)}
+$('#kLabels').addEventListener('change',function(){$$('#kb .lab').forEach(function(s){s.style.display=$('#kLabels').checked?'':'none'})});
+var K={mode:'scales',stype:'major',ex:null,seq:[],last:null,missed:false,done:false,sel:[],expl:{t:'C:major',s:'major'}};
+var STYPES=[['major','Major',MAJOR,'major'],['natural','Natural minor',NMIN,'minor'],['harmonic','Harmonic minor',HMIN,'minor'],['melodic','Melodic minor (up)',MMIN,'minor']];
+function stInfo(id){return STYPES.filter(function(s){return s[0]===id})[0]}
+function renderKMode(){
+  $('#kMode').innerHTML=[['scales','Scales'],['chords','Chords'],['explore','Explore']].map(function(a){return'<button data-m="'+a[0]+'" aria-pressed="'+(K.mode===a[0])+'">'+a[1]+'</button>'}).join('')}
+function newKeyEx(){
+  renderKMode();K.seq=[];K.last=null;K.missed=false;K.done=false;K.sel=[];kbSel([]);kbHints(null);
+  var p=$('#kPrompt'),btns=$('#kBtns');$('#kFb').className='fb';$('#kFb').textContent='';
+  if(K.mode==='scales'){
+    var si=stInfo(K.stype),tonics=TONICS.filter(function(t){return t.mode===si[3]}),t=rnd(tonics),names=spell(t.name,si[2]).concat([t.name]);
+    K.ex={kind:'scale',names:names,pcs:names.map(pcOf),label:fmt(t.name)+' '+si[1].toLowerCase()};
+    p.innerHTML='<div class="row" style="margin-bottom:6px"><span class="muted small">Type</span><select id="kType" aria-label="Scale type">'+STYPES.map(function(s){return'<option value="'+s[0]+'"'+(s[0]===K.stype?' selected':'')+'>'+s[1]+'</option>'}).join('')+'</select></div>'
+      +'<p class="q">Play <b>'+fmt(t.name)+' '+si[1].toLowerCase()+'</b>, one octave up.</p><div class="notes" id="kNotes"></div>';
+    btns.innerHTML='<button class="btn ghost" data-k="restart">Restart</button><button class="btn" data-k="next">New scale</button>';
+    drawNotes();if($('#kHints').checked)kbHints(K.ex.pcs);
+  }else if(K.mode==='chords'){
+    var t2=rnd(TONICS),cs=chordsOfKey(t2.name,t2.mode),d=Math.floor(Math.random()*7),c=cs[d];
+    K.ex={kind:'chord',chord:c,pcs:c.notes.map(pcOf),label:c.roman+' in '+keyLabel(t2.name,t2.mode)};
+    p.innerHTML='<p class="q">Play the <b>'+c.roman+'</b> chord in <b>'+keyLabel(t2.name,t2.mode)+'</b>.</p><p class="muted small">Tap three keys, then Check. Any octave or inversion.'+(t2.mode==='minor'?' Minor keys use the harmonic V.':'')+'</p>';
+    btns.innerHTML='<button class="btn" data-k="check">Check</button><button class="btn ghost" data-k="clear">Clear</button><button class="btn ghost" data-k="next">New chord</button>';
+    if($('#kHints').checked)kbHints(K.ex.pcs);
+  }else{
+    var e=K.expl;
+    p.innerHTML='<div class="row" style="margin-bottom:8px"><select id="eKey" aria-label="Key">'+TONICS.map(function(x){var v=x.name+':'+x.mode;return'<option value="'+v+'"'+(v===e.t?' selected':'')+'>'+keyLabel(x.name,x.mode)+'</option>'}).join('')+'</select>'
+      +'<select id="eType" aria-label="Scale form">'+STYPES.map(function(s){return'<option value="'+s[0]+'"'+(s[0]===e.s?' selected':'')+'>'+s[1]+'</option>'}).join('')+'</select></div><div class="notes" id="kNotes"></div>';
+    btns.innerHTML='';exploreDraw();
+  }}
+function exploreDraw(){
+  var e=K.expl,parts=e.t.split(':'),si=stInfo(e.s),names=spell(parts[0],si[2]);
+  $('#kNotes').innerHTML=names.map(function(n){return'<span class="note on">'+fmt(n)+'</span>'}).join(' ');
+  kbHints(names.map(pcOf))}
+function drawNotes(){
+  var ex=K.ex,reveal=$('#kHints').checked||K.done;
+  $('#kNotes').innerHTML=ex.names.map(function(n,i){var on=i<K.seq.length;return'<span class="note'+(on?' on':'')+'">'+((on||reveal)?fmt(n):'·')+'</span>'}).join(' ')}
+function pressKey(m){
+  tone(m);var ex=K.ex;if(!ex&&K.mode!=='explore')return;
+  if(K.mode==='explore'){kbFlash(m,'f-ok');return}
+  if(K.mode==='chords'){var i=K.sel.indexOf(m);if(i>=0)K.sel.splice(i,1);else K.sel.push(m);kbSel(K.sel);return}
+  if(K.done)return;
+  var pc=m%12,want=ex.pcs[K.seq.length],asc=K.last===null||m>K.last,fb=$('#kFb');
+  if(pc===want&&asc){K.seq.push(pc);K.last=m;kbFlash(m,'f-ok');fb.className='fb';fb.textContent='';
+    if(K.seq.length===ex.pcs.length){K.done=true;var assisted=$('#kHints').checked;stat('keys',!K.missed&&!assisted);fb.className='fb ok';fb.innerHTML='<b>'+(K.missed?'Done.':'Clean.')+'</b> '+ex.names.map(fmt).join(' ')+(assisted?' (hints on, not scored)':'')}
+  }else{K.missed=true;kbFlash(m,'f-bad');fb.className='fb bad';
+    fb.innerHTML=asc?'<b>Expected '+fmt(ex.names[K.seq.length])+'.</b> Restart from the tonic.':'<b>Play upward.</b> Restart from the tonic.';
+    K.seq=[];K.last=null;if(pc===ex.pcs[0]){K.seq=[pc];K.last=m}}
+  drawNotes()}
+function checkChord(){
+  var pcs=[];K.sel.forEach(function(m){if(pcs.indexOf(m%12)<0)pcs.push(m%12)});
+  var ex=K.ex,ok=pcs.length===ex.pcs.length&&ex.pcs.every(function(p){return pcs.indexOf(p)>=0}),fb=$('#kFb'),assisted=$('#kHints').checked;
+  fb.className='fb '+(ok?'ok':'bad');
+  fb.innerHTML='<b>'+(ok?'Correct.':'Not quite.')+'</b> '+fmt(ex.chord.name)+' = '+ex.chord.notes.map(fmt).join(' ')+(assisted?' (hints on, not scored)':'');
+  if(!K.scored){K.scored=true;stat('keys',ok&&!assisted)}}
+$('#kMode').addEventListener('click',function(e){var b=e.target.closest('[data-m]');if(!b)return;K.mode=b.dataset.m;K.scored=false;newKeyEx()});
+$('#kBtns').addEventListener('click',function(e){var b=e.target.closest('[data-k]');if(!b)return;var k=b.dataset.k;
+  if(k==='next'){K.scored=false;newKeyEx()}
+  else if(k==='restart'){K.seq=[];K.last=null;K.done=false;$('#kFb').textContent='';drawNotes()}
+  else if(k==='clear'){K.sel=[];kbSel([])}
+  else if(k==='check')checkChord()});
+$('#p-keys').addEventListener('change',function(e){
+  if(e.target.id==='kType'){K.stype=e.target.value;K.scored=false;newKeyEx()}
+  else if(e.target.id==='eKey'){K.expl.t=e.target.value;exploreDraw()}
+  else if(e.target.id==='eType'){K.expl.s=e.target.value;exploreDraw()}
+  else if(e.target.id==='kHints'){if(K.mode==='scales'&&K.ex){kbHints($('#kHints').checked?K.ex.pcs:null);drawNotes()}else if(K.mode==='chords'&&K.ex)kbHints($('#kHints').checked?K.ex.pcs:null);else if(K.mode==='explore')exploreDraw()}});
+
+/* ---------- ear training ---------- */
+var QIV={M:[0,4,7],m:[0,3,7],d:[0,3,6]};
+var PROGS={
+ major:[{id:'1451',label:'I–IV–V–I',idx:[0,3,4,0]},{id:'1564',label:'I–V–vi–IV',idx:[0,4,5,3]},{id:'251',label:'ii–V–I',idx:[1,4,0]},{id:'6415',label:'vi–IV–I–V',idx:[5,3,0,4]}],
+ minor:[{id:'i4V1',label:'i–iv–V–i',idx:[0,3,4,0]},{id:'i6371',label:'i–VI–III–VII',idx:[0,5,2,6]},{id:'i4v1',label:'i–iv–v–i',idx:[0,3,7,0]},{id:'ii5i',label:'ii°–V–i',idx:[1,4,0]}]};
+function chordMidis(tmid,tonicPc,c){var rp=pcOf(c.root),root=tmid+((rp-tonicPc+12)%12),iv=QIV[c.q];return{bass:root-12,notes:iv.map(function(i){return root+i})}}
+function progCur(pool,prog,nm){var tpc=pcOf(nm),tmid=53+(((tpc-53)%12)+12)%12;return{type:'prog',pool:pool,prog:prog,tonic:nm,tpc:tpc,tmid:tmid,cs:chordsOfKey(nm,pool)}}
+function earMake(kind,pool,opt){
+  opt=opt||{};
+  if(kind==='quality')return{type:'quality',q:rnd(opt.qs||['M','m','d']),root:48+Math.floor(Math.random()*13)};
+  var list=PROGS[pool].filter(function(p){return!opt.progs||opt.progs.indexOf(p.id)>=0}),t=rnd(KEYS);
+  return progCur(pool,rnd(list),pool==='major'?t.maj:t.min)}
+function earPlay(c){
+  if(!c)return;
+  if(c.type==='quality'){QIV[c.q].forEach(function(i){tone(c.root+i,0,1.8,.2)});return}
+  var t=0;function play(ch){var m=chordMidis(c.tmid,c.tpc,ch);tone(m.bass,t,1.0,.2);m.notes.forEach(function(n){tone(n,t,1.0,.16)});t+=.95}
+  play(c.cs[0]);t+=.5;c.prog.idx.forEach(function(i){play(c.cs[i])})}
+function earKey(c){return c.type==='quality'?c.q:c.prog.id}
+function earReveal(c){return c.type==='quality'?QN[c.q]+' triad.':c.prog.label+' in '+keyLabel(c.tonic,c.pool)+': '+c.prog.idx.map(function(i){return fmt(c.cs[i].name)}).join(' – ')+'.'}
+var E={kind:'quality',pool:'major',cur:null,answered:false};
+function newEar(){
+  E.cur=earMake(E.kind,E.pool);E.answered=false;renderEar();setTimeout(function(){earPlay(E.cur)},150)}
+function renderEar(){
+  var h='<div class="row" style="margin-bottom:12px"><div class="seg" id="eKind"><button data-kind="quality" aria-pressed="'+(E.kind==='quality')+'">Chord quality</button><button data-kind="prog" aria-pressed="'+(E.kind==='prog')+'">Progressions</button></div>';
+  if(E.kind==='prog')h+='<div class="seg" id="ePool"><button data-pool="major" aria-pressed="'+(E.pool==='major')+'">Major</button><button data-pool="minor" aria-pressed="'+(E.pool==='minor')+'">Minor</button></div>';
+  h+='</div>';
+  h+='<p class="q">'+(E.kind==='quality'?'What quality is this triad?':'Which progression? You hear the tonic chord first.')+'</p>';
+  h+='<div class="row" style="margin-bottom:12px"><button class="btn" data-e="play">▶ Play</button></div>';
+  h+=earChoices(E.kind,E.pool);
+  h+='<div class="fb" id="eFb" aria-live="polite"></div><div class="row"><button class="btn" data-e="next" hidden>Next</button></div>';
+  $('#earBody').innerHTML=h}
+function earChoices(kind,pool,opt){
+  opt=opt||{};
+  if(kind==='quality')return'<div class="ansrow c3">'+(opt.qs||['M','m','d']).map(function(q){return'<button class="ans" data-v="'+q+'">'+QN[q]+'</button>'}).join('')+'</div>';
+  return'<div class="ansrow c2">'+PROGS[pool].filter(function(p){return!opt.progs||opt.progs.indexOf(p.id)>=0}).map(function(p){return'<button class="ans" data-v="'+p.id+'">'+p.label+'</button>'}).join('')+'</div>'}
+$('#earBody').addEventListener('click',function(e){
+  var k=e.target.closest('[data-kind]');if(k){E.kind=k.dataset.kind;newEar();return}
+  var p=e.target.closest('[data-pool]');if(p){E.pool=p.dataset.pool;newEar();return}
+  var a=e.target.closest('[data-e]');if(a){if(a.dataset.e==='play')earPlay(E.cur);else newEar();return}
+  var b=e.target.closest('.ans');if(!b||E.answered)return;
+  E.answered=true;var c=E.cur,ok=b.dataset.v===earKey(c);stat('ear',ok);
+  $$('#earBody .ans').forEach(function(x){x.disabled=true;if(x.dataset.v===earKey(c))x.classList.add('ok');else if(x===b)x.classList.add('bad')});
+  var fb=$('#eFb');fb.className='fb '+(ok?'ok':'bad');fb.innerHTML='<b>'+(ok?'Correct.':'Not quite.')+'</b> '+earReveal(c);
+  $('#earBody [data-e="next"]').hidden=false});
+
+/* ---------- progress ---------- */
+function renderProgress(){
+  var nd=LESSONS.filter(function(l){return S.lessons[l.id]}).length,h='<h2>Progress</h2><div class="prog"><span>Lessons</span><span class="num">'+nd+' / '+LESSONS.length+' done</span><div class="bar"><i style="width:'+(nd/LESSONS.length*100)+'%"></i></div></div>';
+  DECKS.forEach(function(d){
+    var items=ALL.filter(function(i){return i.deck===d.id}),seen=0,mast=0,ok=0,tot=0;
+    items.forEach(function(i){var r=S.cards[i.id];if(r){seen++;ok+=r.ok;tot+=r.seen;if(r.box>=4)mast++}});
+    h+='<div class="prog"><span>'+d.title+'</span><span class="num">'+mast+' / '+items.length+' mastered · '+seen+' seen'+(tot?' · '+Math.round(ok/tot*100)+'% right':'')+'</span><div class="bar"><i style="width:'+(mast/items.length*100)+'%"></i></div></div>'});
+  [['build','Build the signature'],['keys','Keyboard'],['ear','Ear training']].forEach(function(a){
+    var s=S.stats[a[0]]||{ok:0,total:0};
+    h+='<div class="prog"><span>'+a[1]+'</span><span class="num">'+s.ok+' / '+s.total+' right'+(s.total?' · '+Math.round(s.ok/s.total*100)+'%':'')+'</span><div class="bar"><i style="width:'+(s.total?s.ok/s.total*100:0)+'%"></i></div></div>'});
+  h+='<p class="muted small">Mastered means box 4 or 5: three correct answers in a row, spaced out. Progress is stored in this browser only. Answers on the keyboard count only with hints off.</p>';
+  h+='<div class="row"><button class="btn ghost" id="resetBtn">Reset progress</button></div>';
+  $('#progBody').innerHTML=h}
+$('#progBody').addEventListener('click',function(e){
+  var b=e.target.closest('#resetBtn');if(!b)return;
+  if(b.dataset.armed){S={cards:{},stats:{},lessons:{}};save();renderProgress()}
+  else{b.dataset.armed='1';b.textContent='Click again to erase all progress'}});
+
+/* ---------- reference ---------- */
+function renderRef(){
+  var h='<table><thead><tr><th>Accidentals</th><th>Major</th><th>Minor</th><th>Notes altered</th></tr></thead><tbody>';
+  range(-7,7).forEach(function(n){var c=n>0?'s':n<0?'f':'';
+    h+='<tr><td class="'+c+'">'+cnt(n)+'</td><td>'+fmt(majName(n))+'</td><td>'+fmt(minName(n))+'m</td><td class="mono '+c+'">'+(n===0?'none':sigLetters(n).join(' '))+'</td></tr>'});
+  $('#refSigs').innerHTML=h+'</tbody></table>';
+  $('#refOrder').innerHTML='<p style="margin:0 0 6px"><span style="color:var(--sharp)"><b>Sharps</b></span> &nbsp;<span style="font-family:var(--mono)">F C G D A E B</span><br><span class="muted small">Father Charles Goes Down And Ends Battle</span></p>'
+    +'<p style="margin:0 0 6px"><span style="color:var(--flat)"><b>Flats</b></span> &nbsp;<span style="font-family:var(--mono)">B E A D G C F</span><br><span class="muted small">Battle Ends And Down Goes Charles’s Father</span></p>'
+    +'<p class="muted small" style="margin:0">Sharp key: a half step above the last sharp. Flat key: the second-to-last flat (F major is the exception). Relative minor: the 6th degree.</p>';
+  $('#refKey').innerHTML=TONICS.map(function(x){return'<option value="'+x.name+':'+x.mode+'">'+keyLabel(x.name,x.mode)+'</option>'}).join('');
+  $('#refKey').value='C:major';drawRefChords()}
+function drawRefChords(){
+  var p=$('#refKey').value.split(':'),cs=chordsOfKey(p[0],p[1]);
+  var h='<table><thead><tr><th>Degree</th><th>Chord</th><th>Notes</th><th>Quality</th></tr></thead><tbody>';
+  cs.forEach(function(c){h+='<tr><td>'+c.roman+'</td><td><b>'+fmt(c.name)+'</b></td><td class="mono">'+c.notes.map(fmt).join(' ')+'</td><td>'+QN[c.q]+'</td></tr>'});
+  $('#refChords').innerHTML=h+'</tbody></table>'+(p[1]==='minor'?'<p class="muted small" style="margin:8px 0 0">V uses the harmonic minor’s raised 7th; the natural v is the last row.</p>':'')}
+  $('#refGloss').innerHTML='<dl class="gl">'+[['Half step','Distance between neighbouring keys, black or white.'],['Whole step','Two half steps.'],['Sharp ♯ / flat ♭','Raises / lowers a note by a half step.'],['Accidental','A sharp or flat.'],['Key signature','The sharps or flats at the start of a line; they apply to every octave.'],['Scale','Seven notes in a row, in a pattern of whole and half steps.'],['Tonic','The home note of a key; degree 1.'],['Degree','A note’s number in the scale, 1 to 7.'],['Third / fifth','The note three / five letters up, counting the start as 1.'],['Triad','Root, third and fifth stacked: three notes.'],['Major / minor third','4 / 3 half steps. Decides if a triad is major or minor.'],['Diminished','Minor third plus a 6-half-step fifth. Tense.'],['Roman numeral','Chord named by its degree. Uppercase major, lowercase minor, ° diminished.'],['Relative minor','Minor key sharing a major key’s signature; starts on degree 6.'],['Leading tone','The 7th degree a half step below the tonic; pulls up to it.']].map(function(a){return'<dt>'+a[0]+'</dt><dd>'+a[1]+'</dd>'}).join('')+'</dl>';
+$('#refKey').addEventListener('change',drawRefChords);
+
+/* ---------- guided path ---------- */
+var LOC=[0,2,3,5,6,8,10];
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function triadNames(root,q){var sc=spell(root,q==='M'?MAJOR:q==='m'?NMIN:LOC);return[sc[0],sc[2],sc[4]]}
+function midisFor(names,start){var out=[],prev=null;names.forEach(function(n){var pc=pcOf(n),m;if(prev===null)m=start+(((pc-start)%12)+12)%12;else{m=prev+1;while(m%12!==pc)m++}out.push(m);prev=m});return out}
+
+/* item factories used only by lessons */
+var WH_PAIRS=[['E','F',1],['C','D',2],['B','C',1],['F','G',2],['G','A',2],['A','B',2],['D','E',2],['F','F#',1],['E','F#',2],['B','Bb',1],['A','Bb',1],['Bb','C',2],['C','C#',1],['C#','D#',2],['G','G#',1],['D','Eb',1],['Eb','F',2],['B','C#',2]];
+function mkWH(p){return{id:'L:wh:'+p[0]+p[1],set:'wh',correct:p[2]===1?'Half step':'Whole step',
+  prompt:function(){return'<p class="q">From <b>'+fmt(p[0])+'</b> up to <b>'+fmt(p[1])+'</b>: half step or whole step?</p>'},
+  hintText:'Neighbouring keys on a keyboard, black or white, are a half step apart. One key in between means a whole step.',
+  why:fmt(p[0])+' to '+fmt(p[1])+': '+(p[2]===1?'neighbouring keys, a half step.':'one key in between, a whole step.')}}
+function mkCnt(n){return{id:'L:cnt:'+n,set:'counts',correct:String(n),
+  prompt:function(){return'<p class="q">How many sharps or flats?</p>'+staffSVG({clef:rnd(CLEFS),n:n})},
+  hintText:'Count the symbols. ♯ is a sharp, ♭ is a flat. The count runs from 0 to 7 and the answer buttons show ♯ or ♭ for you.',
+  why:cnt(n)+': '+sigText(n)+'.'}}
+function mkNext(kind,i){var ord=kind==='s'?ORD_S:ORD_F,sym=kind==='s'?'♯':'♭',nm=kind==='s'?'sharps':'flats';
+  return{id:'L:nx'+kind+i,set:'letters',correct:ord[i],
+  prompt:function(){return'<p class="q">The order of '+nm+' begins <b>'+ord.slice(0,i).split('').map(function(l){return l+sym}).join(' ')+'</b>. Which letter comes next?</p>'},
+  hintText:kind==='s'?'Father Charles Goes Down And Ends Battle: F C G D A E B.':'Battle Ends And Down Goes Charles’s Father: B E A D G C F.',
+  why:(kind==='s'?'Sharps: F C G D A E B.':'Flats: B E A D G C F.')}}
+function mkLast(n){var ls=sigLetters(n).map(function(l){return l+'♯'}),last=ls[ls.length-1];
+  return{id:'L:ls:'+n,set:'majorKeys',correct:majName(n),
+  prompt:function(){return'<p class="q">A key signature has these sharps: <b>'+ls.join(' ')+'</b>. Which major key?</p>'},
+  hintText:'The last sharp is '+last+'. The key is a half step above it.',
+  why:'Last sharp '+last+', half step up → '+fmt(majName(n))+' major.'}}
+function mkSecond(n){var fs=sigLetters(n).map(function(l){return l+'♭'}),sec=fs.length>1?fs[fs.length-2]:null;
+  return{id:'L:sl:'+n,set:'majorKeys',correct:majName(n),
+  prompt:function(){return'<p class="q">A key signature has these flats: <b>'+fs.join(' ')+'</b>. Which major key?</p>'},
+  hintText:sec?'The second-to-last flat is '+sec+'. That flat names the key.':'One flat is the exception: it is F major.',
+  why:sec?'Second-to-last flat '+sec+' → '+fmt(majName(n))+' major.':'One flat (B♭) = F major, the exception.'}}
+
+/* keyboard task factories */
+function tNote(start,dir,semis){var tp=((pcOf(start)+dir*semis)%12+12)%12;return{mode:'set',prompt:'Play the note a <b>'+(semis===1?'half':'whole')+' step '+(dir>0?'above':'below')+' '+fmt(start)+'</b>.',pcs:[tp],names:[PCN[tp]]}}
+function tKey(name){return{mode:'set',prompt:'Play <b>'+fmt(name)+'</b>.',pcs:[pcOf(name)],names:[fmt(name)]}}
+function tScale(tonic,type){var si=stInfo(type),names=spell(tonic,si[2]).concat([tonic]);return{mode:'seq',prompt:'Play <b>'+fmt(tonic)+' '+si[1].toLowerCase()+'</b>, one octave up.',pcs:names.map(pcOf),names:names.map(fmt)}}
+function tTriad(root,q){var nm=triadNames(root,q);return{mode:'set',prompt:'Play the <b>'+fmt(root)+' '+QN[q].toLowerCase()+'</b> triad: three notes together.',pcs:nm.map(pcOf),names:nm.map(fmt)}}
+function tDeg(tonic,mode,deg){var c=chordsOfKey(tonic,mode)[deg];return{mode:'set',prompt:'Play the <b>'+c.roman+'</b> chord in <b>'+keyLabel(tonic,mode)+'</b>.',pcs:c.notes.map(pcOf),names:c.notes.map(fmt),chordName:c.name}}
+/* build task factories */
+function bKey(n,mode,clef,guide){return{n:n,clef:clef,guide:guide,prompt:'Write the key signature of <b>'+keyLabel(mode==='major'?majName(n):minName(n),mode)+'</b>.'}}
+function bRaw(n,clef,guide){return{n:n,clef:clef,guide:guide,raw:true,prompt:'Place the first <b>'+Math.abs(n)+'</b> '+(n>0?'sharp':'flat')+(Math.abs(n)>1?'s':'')+' on the staff, in order.'}}
+
+function fromAll(re,n){return function(){return ALL.filter(function(i){return re.test(i.id)})}}
+function mixed(fns){return function(){var o=[];fns.forEach(function(f){o=o.concat(f())});return o}}
+function mk(fn,arr){return function(){return arr.map(fn)}}
+
+var LESSONS=[
+{id:'steps',title:'Half steps, whole steps and accidentals',goal:'The one distance everything else is built on.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'The half step',h:`<p>A <b>half step</b> is the distance between two neighbouring keys on a keyboard, black or white. Two half steps make a <b>whole step</b>. Try a few keys.</p><div data-w="kb"></div><p class="muted small">You know this distance from singing: it is the smallest step in a scale.</p>`},
+  {t:'Where the half steps are',h:`<p>Among the white keys, two pairs sit side by side with no black key between them: <b>E–F</b> and <b>B–C</b>. Those are half steps. Every other neighbouring pair of white keys has a black key in between, so it is a whole step.</p><div data-w="kb" data-pcs="4,5,11,0"></div><p class="muted small">Highlighted: E, F, B, C.</p>`},
+  {t:'Sharps and flats',h:`<p>A <b>sharp</b> (♯) raises a note by a half step. A <b>flat</b> (♭) lowers it by a half step.</p><p>The black key between F and G is F♯ (a half step above F) and also G♭ (a half step below G). One key, two names. Which name is used depends on the key of the piece.</p><div data-w="kb" data-pcs="6"></div><p class="muted small">Highlighted: F♯ / G♭.</p><div class="callout">Sharps and flats are called <b>accidentals</b>.</div>`}]},
+ {kind:'drill',label:'Try it, with hints',n:6,hint:true,items:mk(mkWH,WH_PAIRS.slice(0,10))},
+ {kind:'kb',label:'Find it on the keyboard',hints:true,count:5,tasks:function(){return[tNote('E',1,1),tNote('C',1,2),tKey('F#'),tNote('B',1,1),tNote('G',-1,1)]}},
+ {kind:'drill',label:'On your own',n:8,items:mk(mkWH,WH_PAIRS)}]},
+
+{id:'whatis',title:'What a key signature is',goal:'Read the sharps or flats at the start of a line.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'The symbols after the clef',h:`<p>A <b>key signature</b> is the group of sharps or flats written right after the clef at the start of each line. It means: play these notes sharp (or flat) every time, unless told otherwise.</p><div data-w="staff" data-n="2"></div><p class="muted small">Two sharps: F♯ and C♯.</p>`},
+  {t:'It applies to every octave',h:`<p>The F♯ in the signature does not only sharpen the F the symbol sits on. <b>Every</b> F in the piece, high or low, is F♯.</p><div data-w="staff" data-n="1"></div><p class="muted small">One sharp: F♯. Every F becomes F♯.</p>`},
+  {t:'Why it exists',h:`<p>Music in a key uses a particular set of seven notes, its <b>scale</b>. The signature lists the sharps or flats that scale needs once, so they are not written beside every note.</p><p>There are <b>15 major keys</b>: 7 with sharps, 7 with flats, and C major with none. A signature has sharps or flats, never both.</p><div data-w="staff" data-n="0"></div><p class="muted small">No symbols: C major.</p>`}]},
+ {kind:'drill',label:'Try it, with hints',n:6,hint:true,clefs:['treble'],items:mk(mkCnt,[-3,-2,-1,0,1,2,3,4])},
+ {kind:'drill',label:'On your own',n:8,items:mk(mkCnt,range(-7,7))}]},
+
+{id:'sharps',title:'The order of sharps',goal:'Sharps always arrive in the same order: F C G D A E B.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'A fixed order',h:`<p>Sharps always appear in the same order: <b>F, C, G, D, A, E, B</b>. One sharp is always F♯. Two sharps are F♯ and C♯. You never see C♯ without F♯ first.</p><p>Press “Add next” and watch them fill in left to right.</p><div data-w="acc" data-type="s"></div>`},
+  {t:'A phrase to remember it',h:`<p><b>F</b>ather <b>C</b>harles <b>G</b>oes <b>D</b>own <b>A</b>nd <b>E</b>nds <b>B</b>attle.</p><p>Say it a few times out loud. Make up your own if you prefer; it only has to give you F C G D A E B.</p><div class="callout">On the staff each sharp has a fixed position too. You will place them yourself in a moment; the positions come with practice.</div>`}]},
+ {kind:'drill',label:'Try it, with hints',n:6,hint:true,items:mk(function(i){return mkNext('s',i)},[1,2,3,4,5,6])},
+ {kind:'build',label:'Place them: trace the guide',count:2,clefs:['treble'],tasks:function(){return[bRaw(3,'treble',true),bRaw(5,'treble',true)]}},
+ {kind:'drill',label:'On your own',n:8,items:fromAll(/^ord:s/)},
+ {kind:'build',label:'Place them: no guide',count:3,tasks:function(){return[bRaw(2,'treble',false),bRaw(4,'bass',false),bRaw(7,'treble',false)]}}]},
+
+{id:'flats',title:'The order of flats',goal:'Flats arrive in the reverse order: B E A D G C F.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'The sharps, backwards',h:`<p>Flats also come in a fixed order, and it is exactly the sharps reversed: <b>B, E, A, D, G, C, F</b>. One flat is B♭. Two flats are B♭ and E♭.</p><div data-w="acc" data-type="f"></div>`},
+  {t:'A phrase',h:`<p><b>B</b>attle <b>E</b>nds <b>A</b>nd <b>D</b>own <b>G</b>oes <b>C</b>harles’s <b>F</b>ather.</p><p>It is the sharps phrase read backwards. Know one and you have both.</p>`}]},
+ {kind:'drill',label:'Try it, with hints',n:6,hint:true,items:mk(function(i){return mkNext('f',i)},[1,2,3,4,5,6])},
+ {kind:'build',label:'Place them: trace the guide',count:2,clefs:['treble'],tasks:function(){return[bRaw(-3,'treble',true),bRaw(-5,'treble',true)]}},
+ {kind:'drill',label:'On your own',n:8,items:fromAll(/^ord:f/)},
+ {kind:'build',label:'Place them: no guide',count:3,tasks:function(){return[bRaw(-2,'treble',false),bRaw(-4,'bass',false),bRaw(-7,'treble',false)]}}]},
+
+{id:'sharpkeys',title:'Naming a sharp key',goal:'From a signature with sharps to the key.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'The rule',h:`<p>Look at the <b>last</b> sharp (the rightmost). The key is a half step above it.</p><p>Two sharps: F♯ C♯. The last is C♯. A half step above C♯ is D → <b>D major</b>.</p><div data-w="staff" data-n="2"></div>`},
+  {t:'More examples',h:`<p>Three sharps: F♯ C♯ G♯. Last is G♯, half step up is A → <b>A major</b>.</p><p>No sharps is C major. One sharp (F♯): half step above is G → <b>G major</b>.</p><div class="callout">The sharp keys in order: <b>G D A E B F♯ C♯</b>, with 1 to 7 sharps. Each is a fifth above the one before.</div>`}]},
+ {kind:'drill',label:'Try it, with hints',n:6,hint:true,items:mk(mkLast,range(1,7))},
+ {kind:'drill',label:'Read it from the staff',n:8,hint:true,hintText:'Count the sharps, name the last one, go a half step up.',clefs:['treble'],items:fromAll(/^s2M:[1-7]$/)},
+ {kind:'drill',label:'On your own, both directions',n:10,items:mixed([fromAll(/^s2M:[0-7]$/),fromAll(/^k2s:M:[0-7]$/)])}]},
+
+{id:'flatkeys',title:'Naming a flat key',goal:'From a signature with flats to the key.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'The rule',h:`<p>With flats, use the <b>second-to-last</b> flat. That flat names the key.</p><p>Three flats: B♭ E♭ A♭. Second-to-last is E♭ → <b>E♭ major</b>.</p><div data-w="staff" data-n="-3"></div>`},
+  {t:'The one exception',h:`<p>One flat (B♭) has no second-to-last. That key is <b>F major</b>. Just remember it.</p><div class="callout">The flat keys in order: <b>F B♭ E♭ A♭ D♭ G♭ C♭</b>, with 1 to 7 flats. Each is a fourth above the one before.</div>`}]},
+ {kind:'drill',label:'Try it, with hints',n:6,hint:true,items:mk(mkSecond,range(-1,-7))},
+ {kind:'drill',label:'Read it from the staff',n:8,hint:true,hintText:'Count the flats, find the second-to-last one. One flat is F major.',clefs:['treble'],items:fromAll(/^s2M:-[1-7]$/)},
+ {kind:'drill',label:'On your own, all 15 keys',n:12,items:mixed([fromAll(/^s2M:/),fromAll(/^k2s:M:/)])}]},
+
+{id:'write',title:'Writing a key signature',goal:'From a key name to the staff.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'Three steps',h:`<p>Given a key, say <b>E major</b>:</p><p>1. Is it a sharp key or a flat key? The sharp keys are C G D A E B F♯ C♯. The flat keys are F B♭ E♭ A♭ D♭ G♭ C♭.</p><p>2. How many? E is the 4th sharp key (G D A <b>E</b>), so <b>4 sharps</b>.</p><p>3. Write that many from the order: F♯ C♯ G♯ D♯, left to right.</p><div data-w="staff" data-n="4"></div>`}]},
+ {kind:'build',label:'Sharp keys, with a guide',count:3,clefs:['treble'],tasks:function(){return[bKey(2,'major','treble',true),bKey(4,'major','treble',true),bKey(5,'major','treble',true)]}},
+ {kind:'build',label:'Flat keys, with a guide',count:3,clefs:['treble'],tasks:function(){return[bKey(-1,'major','treble',true),bKey(-3,'major','treble',true),bKey(-6,'major','treble',true)]}},
+ {kind:'build',label:'On your own',count:4,tasks:function(){return shuffle([bKey(3,'major','treble',false),bKey(-4,'major','bass',false),bKey(6,'major','treble',false),bKey(-2,'major','bass',false)])}}]},
+
+{id:'scale',title:'The major scale',goal:'The pattern behind every key signature.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'Whole, whole, half…',h:`<p>A major scale is seven notes, each a whole or half step from the last, in this pattern:</p><p><b>W W H W W W H</b></p><div class="steprow"><span>C</span><i>W</i><span>D</span><i>W</i><span>E</span><i>H</i><span>F</span><i>W</i><span>G</span><i>W</i><span>A</span><i>W</i><span>B</span><i>H</i><span>C</span></div><button class="btn ghost" data-play="scale:C:major">▶ Hear C major</button><div data-w="kb" data-pcs="0,2,4,5,7,9,11"></div>`},
+  {t:'Start anywhere',h:`<p>Start on any note and follow the same pattern: you get that note’s major scale. Starting on G, the pattern needs a half step between the 7th and 8th note, so the 7th is F♯, not F.</p><div class="steprow"><span>G</span><i>W</i><span>A</span><i>W</i><span>B</span><i>H</i><span>C</span><i>W</i><span>D</span><i>W</i><span>E</span><i>W</i><span class="acc-s">F♯</span><i>H</i><span>G</span></div><button class="btn ghost" data-play="scale:G:major">▶ Hear G major</button>`},
+  {t:'The connection',h:`<div class="callout"><b>A key signature is the list of sharps or flats its major scale needs.</b> G major needs F♯, so its signature is F♯. Learn the scale and you know the signature.</div><p>Next you play scales. Go slowly and listen: the half steps fall between notes 3–4 and 7–8.</p>`}]},
+ {kind:'kb',label:'Play it, with hints',hints:true,count:4,tasks:function(){return[tScale('C','major'),tScale('G','major'),tScale('F','major'),tScale('D','major')]}},
+ {kind:'kb',label:'On your own',count:4,tasks:function(){return shuffle([tScale('A','major'),tScale('Bb','major'),tScale('E','major'),tScale('Eb','major'),tScale('B','major')]).slice(0,4)}}]},
+
+{id:'triads',title:'Triads: major, minor, diminished',goal:'The building block of chords.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'What a triad is',h:`<p>A <b>chord</b> is three or more notes sounding together. The simplest is a <b>triad</b>: a <b>root</b> note, the note a <b>third</b> above it, and the note a <b>fifth</b> above it.</p><p>In a scale, that means: take a note, skip one, take the next, skip one, take the next. From C: <b>C – E – G</b>.</p><div data-w="kb" data-pcs="0,4,7"></div><button class="btn ghost" data-play="chord:C:M">▶ C major triad</button>`},
+  {t:'Major or minor',h:`<p>What makes a triad major or minor is the third, counted in half steps above the root:</p><p><b>Major triad:</b> third is 4 half steps up (bright). <b>Minor triad:</b> third is 3 half steps up (darker). The fifth is 7 half steps up in both.</p><p>C major: C E G. C minor: C <b>E♭</b> G. Only the middle note moves.</p><button class="btn ghost" data-play="chord:C:M">▶ C major</button> <button class="btn ghost" data-play="chord:C:m">▶ C minor</button><div data-w="kb" data-pcs="0,3,7"></div>`},
+  {t:'Diminished',h:`<p>A <b>diminished</b> triad has a minor third and a smaller fifth (6 half steps). C diminished: C E♭ G♭. It sounds tense and wants to move on.</p><button class="btn ghost" data-play="chord:C:d">▶ C diminished</button><div data-w="kb" data-pcs="0,3,6"></div>`}]},
+ {kind:'kb',label:'Build triads, with hints',hints:true,count:4,tasks:function(){return[tTriad('C','M'),tTriad('G','M'),tTriad('C','m'),tTriad('A','m')]}},
+ {kind:'ear',label:'Hear the difference: major or minor',ekind:'quality',qs:['M','m'],n:6},
+ {kind:'ear',label:'Add diminished',ekind:'quality',qs:['M','m','d'],n:6}]},
+
+{id:'majorchords',title:'Chords in a major key',goal:'Seven chords from one scale, with a fixed pattern.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'One triad on each note',h:`<p>Build a triad on each note of a major scale, using only notes from the scale. In C major:</p><div class="tbl"><table><tr><th>Degree</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><td>Chord</td><td>C</td><td>Dm</td><td>Em</td><td>F</td><td>G</td><td>Am</td><td>B°</td></tr><tr><td>Notes</td><td class="mono">C E G</td><td class="mono">D F A</td><td class="mono">E G B</td><td class="mono">F A C</td><td class="mono">G B D</td><td class="mono">A C E</td><td class="mono">B D F</td></tr></table></div>`},
+  {t:'The same pattern in every key',h:`<p>Chords are labelled by scale degree with Roman numerals. <b>Uppercase = major, lowercase = minor, ° = diminished.</b></p><p class="big"><b>I ii iii IV V vi vii°</b></p><p>The qualities come out the same in every major key. You learn the pattern once, and the key signature supplies the sharps or flats.</p><div class="callout">In G major: I = G, IV = C, V = D, vi = Em, vii° = F♯°.</div>`}]},
+ {kind:'drill',label:'Quality of each degree, with hints',n:7,hint:true,hintText:'Major keys: I major, ii minor, iii minor, IV major, V major, vi minor, vii° diminished.',items:fromAll(/^qM:/)},
+ {kind:'kb',label:'Play chords in C and G, with hints',hints:true,count:4,tasks:function(){return[tDeg('C','major',3),tDeg('C','major',4),tDeg('G','major',0),tDeg('G','major',5)]}},
+ {kind:'kb',label:'On your own',count:4,tasks:function(){return shuffle([tDeg('F','major',3),tDeg('D','major',4),tDeg('A','major',1),tDeg('F','major',5),tDeg('C','major',6)])}}]},
+
+{id:'progs',title:'Chord progressions in a major key',goal:'Hear how chords move and resolve.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'Chords have jobs',h:`<p>The <b>tonic</b> (I) is home: stable, finished. The <b>dominant</b> (V) builds tension that wants to return home. The <b>subdominant</b> (IV, ii) moves away from home.</p><p>A progression is a journey: leave home, build tension, return.</p>`},
+  {t:'Four to know',h:`<p><b>I–IV–V–I</b>: home, away, tension, home. The classic.</p><button class="btn ghost" data-play="prog:C:major:1451">▶ in C</button><p><b>I–V–vi–IV</b>: the pop progression.</p><button class="btn ghost" data-play="prog:C:major:1564">▶ in C</button><p><b>ii–V–I</b>: the standard cadence.</p><button class="btn ghost" data-play="prog:C:major:251">▶ in C</button><p><b>vi–IV–I–V</b>: same chords as I–V–vi–IV, starting from vi.</p><button class="btn ghost" data-play="prog:C:major:6415">▶ in C</button>`},
+  {t:'How to listen',h:`<p>In the exercises you first hear the tonic chord, then the progression. Listen to where the bass moves: I–IV–V–I ends with a strong step from V to I; I–V–vi–IV reaches a minor chord (vi) before the final IV.</p>`}]},
+ {kind:'ear',label:'Two progressions',ekind:'prog',pool:'major',progs:['1451','1564'],n:6},
+ {kind:'ear',label:'All four',ekind:'prog',pool:'major',n:8}]},
+
+{id:'relative',title:'Relative minor keys',goal:'Every major key shares a signature with a minor key.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'Same notes, different home',h:`<p>Every major key has a <b>relative minor</b> with the same key signature. C major has no sharps or flats, and neither does <b>A minor</b>. Same seven notes, but A is home instead of C.</p><button class="btn ghost" data-play="scale:C:major">▶ C major</button> <button class="btn ghost" data-play="scale:A:natural">▶ A minor</button>`},
+  {t:'Finding it',h:`<p>The relative minor starts on the <b>6th note</b> of the major scale, or three half steps below the major tonic.</p><p>C → A. G → E. F → D. E♭ → C. To go the other way, count three half steps up from the minor tonic: A → C.</p><div class="callout">A minor and C major: 0 accidentals. E minor and G major: 1 sharp. D minor and F major: 1 flat.</div>`}]},
+ {kind:'drill',label:'Major to relative minor, with hints',n:6,hint:true,hintText:'The 6th note of the major scale, or three half steps down.',items:fromAll(/^relm:/)},
+ {kind:'drill',label:'Minor key from a signature',n:8,hint:true,hintText:'Find the major key for this signature, then go three half steps down.',clefs:['treble'],items:fromAll(/^s2m:/)},
+ {kind:'drill',label:'On your own, both directions',n:10,items:mixed([fromAll(/^relm:/),fromAll(/^relM:/),fromAll(/^s2m:/)])}]},
+
+{id:'minorscales',title:'Minor scales',goal:'Natural, harmonic and melodic minor.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'Natural minor',h:`<p>The pattern is <b>W H W W H W W</b>. Starting on A, that is all white keys. Its signature is the relative major’s, so A minor has none.</p><button class="btn ghost" data-play="scale:A:natural">▶ A natural minor</button><div data-w="kb" data-pcs="9,11,0,2,4,5,7"></div>`},
+  {t:'Harmonic minor',h:`<p>Raise the <b>7th</b> note by a half step. In A minor, G becomes G♯.</p><p>Why: in natural minor the 7th sits a whole step below the tonic, which feels weak. A half step below (a <b>leading tone</b>) pulls strongly up to the tonic.</p><button class="btn ghost" data-play="scale:A:harmonic">▶ A harmonic minor</button><div class="callout">The raised note is written as an accidental in the music, not in the key signature.</div>`},
+  {t:'Melodic minor',h:`<p>Going up, raise both the <b>6th and 7th</b> (A minor: F♯ and G♯). This avoids the large gap harmonic minor has between 6 and 7. Coming down it usually returns to natural minor.</p><button class="btn ghost" data-play="scale:A:melodic">▶ A melodic minor (up)</button>`}]},
+ {kind:'kb',label:'Natural minor, with hints',hints:true,count:3,tasks:function(){return[tScale('A','natural'),tScale('E','natural'),tScale('D','natural')]}},
+ {kind:'kb',label:'Harmonic minor, with hints',hints:true,count:3,tasks:function(){return[tScale('A','harmonic'),tScale('E','harmonic'),tScale('D','harmonic')]}},
+ {kind:'kb',label:'Melodic minor, with hints',hints:true,count:2,tasks:function(){return[tScale('A','melodic'),tScale('E','melodic')]}},
+ {kind:'kb',label:'On your own',count:4,tasks:function(){return shuffle([tScale('B','natural'),tScale('G','harmonic'),tScale('E','melodic'),tScale('D','harmonic'),tScale('A','natural')]).slice(0,4)}}]},
+
+{id:'minorchords',title:'Chords in a minor key',goal:'The minor pattern, and why V is usually major.',steps:[
+ {kind:'pages',label:'Learn',pages:[
+  {t:'The pattern in minor',h:`<p>Building triads on natural minor gives another fixed pattern:</p><p class="big"><b>i ii° III iv v VI VII</b></p><p>In A minor: Am, B°, C, Dm, Em, F, G.</p>`},
+  {t:'The harmonic V',h:`<p>Using the raised 7th (harmonic minor) turns the <b>v</b> chord into a major <b>V</b>: in A minor, E–G♯–B instead of E–G–B. The G♯ pulls up to A and makes a stronger return home.</p><button class="btn ghost" data-play="chord:E:M">▶ E major (V)</button> <button class="btn ghost" data-play="chord:E:m">▶ E minor (v)</button>`},
+  {t:'Common minor progressions',h:`<p><b>i–iv–V–i</b>: strong, with the harmonic V.</p><button class="btn ghost" data-play="prog:A:minor:i4V1">▶ in A minor</button><p><b>i–VI–III–VII</b>: a common pop and rock loop.</p><button class="btn ghost" data-play="prog:A:minor:i6371">▶ in A minor</button><p><b>i–iv–v–i</b>: softer, with the natural v.</p><p><b>ii°–V–i</b>: the minor cadence.</p>`}]},
+ {kind:'drill',label:'Quality of each degree, with hints',n:8,hint:true,hintText:'Natural minor: i minor, ii° diminished, III major, iv minor, v minor, VI major, VII major. The harmonic V is major.',items:fromAll(/^qm:|^qh$/)},
+ {kind:'kb',label:'Play chords in A minor, with hints',hints:true,count:4,tasks:function(){return[tDeg('A','minor',0),tDeg('A','minor',3),tDeg('A','minor',4),tDeg('A','minor',5)]}},
+ {kind:'kb',label:'On your own',count:4,tasks:function(){return shuffle([tDeg('E','minor',3),tDeg('D','minor',4),tDeg('E','minor',5),tDeg('D','minor',0),tDeg('B','minor',6)]).slice(0,4)}},
+ {kind:'ear',label:'Minor progressions',ekind:'prog',pool:'minor',n:8}]},
+
+{id:'check',title:'Checkpoint',goal:'Mixed review with no hints.',steps:[
+ {kind:'pages',label:'Learn',pages:[{t:'What’s left is fluency',h:`<p>You now have the whole toolkit: half and whole steps, signatures and their orders, major and minor scales, triads, the chord pattern in major and minor, and how progressions move.</p><p>This checkpoint mixes everything with no hints. After this, use <b>Flashcards</b> daily: it brings back what you miss. The lessons stay here for review.</p>`}]},
+ {kind:'drill',label:'Mixed questions',n:12,items:mixed([fromAll(/^s2M:/),fromAll(/^s2m:/),fromAll(/^k2s:/),fromAll(/^relm:/),fromAll(/^qM:|^qm:/)])},
+ {kind:'build',label:'Write two signatures',count:2,tasks:function(){return shuffle([bKey(-5,'major','treble',false),bKey(3,'minor','bass',false),bKey(-2,'minor','treble',false),bKey(6,'major','bass',false)]).slice(0,2)}},
+ {kind:'kb',label:'Play a scale and a chord',count:2,tasks:function(){return[tScale(rnd(['D','A','Bb','Eb']),'major'),tDeg(rnd(['G','D','F']),'major',rnd([1,3,4,5]))]}}]}
+];
+
+/* runners */
+var RUN={},RUNID=0;
+function progBar(k,n){return'<div class="lsprog"><div class="bar"><i style="width:'+Math.min(100,k/n*100)+'%"></i></div><span class="num">'+Math.min(k,n)+' / '+n+'</span></div>'}
+function setBar(el,k,n){var b=$('.lsprog',el);if(b){$('i',b).style.width=Math.min(100,k/n*100)+'%';$('.num',b).textContent=Math.min(k,n)+' / '+n}}
+function initWidgets(root){
+  $$('[data-w="kb"]',root).forEach(function(d){var kb=makeKB(d,function(m){tone(m);kb.flash(m,'f-ok')});d.classList.add('kbmini');var p=d.dataset.pcs;kb.hints(p?p.split(',').map(Number):null)});
+  $$('[data-w="staff"]',root).forEach(function(d){d.innerHTML=staffSVG({clef:d.dataset.clef||'treble',n:+d.dataset.n})});
+  $$('[data-w="acc"]',root).forEach(function(d){var type=d.dataset.type,k=0;
+    function draw(){var n=type==='s'?k:-k;d.innerHTML=staffSVG({clef:'treble',n:n})+'<p class="mono" style="min-height:1.6em;margin:0 0 8px">'+(k?sigLetters(n).map(function(l){return l+(type==='s'?'♯':'♭')}).join(' '):'…')+'</p><div class="row"><button class="btn ghost" data-a="add">Add next</button><button class="btn ghost" data-a="reset">Reset</button></div>'}
+    d.onclick=function(e){var b=e.target.closest('[data-a]');if(!b)return;if(b.dataset.a==='add'){if(k<7)k++}else k=0;draw()};draw()})}
+function playSpec(s){var p=s.split(':');
+  if(p[0]==='scale'){var si=stInfo(p[2]),names=spell(p[1],si[2]).concat([p[1]]);midisFor(names,60).forEach(function(m,i){tone(m,i*.4,.7)})}
+  else if(p[0]==='chord'){midisFor(triadNames(p[1],p[2]),60).forEach(function(m){tone(m,0,1.6,.2)})}
+  else if(p[0]==='prog'){var pr=PROGS[p[2]].filter(function(x){return x.id===p[3]})[0];earPlay(progCur(p[2],pr,p[1]))}}
+$('#p-path').addEventListener('click',function(e){var b=e.target.closest('[data-play]');if(b)playSpec(b.dataset.play)});
+
+RUN.pages=function(el,st,done){
+  var i=0;
+  function show(){var p=st.pages[i],last=i===st.pages.length-1;
+    el.innerHTML='<div class="page"><p class="tag">'+(i+1)+' of '+st.pages.length+'</p><h2>'+p.t+'</h2>'+p.h+'</div><div class="row" style="margin-top:14px">'+(i>0?'<button class="btn ghost" data-pg="back">Back</button>':'')+'<button class="btn" data-pg="next">'+(last?'Start practice':'Next')+'</button></div>';
+    initWidgets(el)}
+  el.onclick=function(e){var b=e.target.closest('[data-pg]');if(!b)return;if(b.dataset.pg==='back'){i--;show()}else if(i<st.pages.length-1){i++;show()}else done({auto:true})};
+  el._solve=function(){if(i<st.pages.length-1){i++;show();return false}done({auto:true});return true};
+  show()};
+
+RUN.drill=function(el,st,done){
+  var tok=el._tok,items=st.items(),need=st.n||6,correct=0,queue=[],cur=null,answered=false,miss={},timer=null,fin=false;
+  function nextItem(){if(!queue.length)queue=shuffle(items);var it=queue.shift();if(cur&&it.id===cur.id&&queue.length){queue.push(it);it=queue.shift()}return it}
+  function render(){cur=nextItem();answered=false;
+    el.innerHTML=progBar(correct,need)+cur.prompt()
+      +(st.hint?'<div class="row" style="margin-bottom:8px"><button class="btn ghost" data-d="hint">Hint</button></div><div class="hintbox" hidden></div>':'')
+      +answerHTML(cur.set)+'<div class="fb" aria-live="polite"></div><div class="row"><button class="btn" data-d="next" hidden>Next</button></div>'}
+  function answer(v){answered=true;var ok=String(v)===String(cur.correct);grade(cur.id,ok);
+    if(ok)correct++;else{miss[cur.id]=1;queue.splice(Math.min(2,queue.length),0,cur)}
+    $$('.ans',el).forEach(function(b){b.disabled=true;if(b.dataset.v===String(cur.correct))b.classList.add('ok');else if(b.dataset.v===String(v))b.classList.add('bad')});
+    var fb=$('.fb',el);fb.className='fb '+(ok?'ok':'bad');fb.innerHTML='<b>'+(ok?'Correct.':'Not quite.')+'</b> '+esc(cur.why);
+    setBar(el,correct,need);
+    if(correct>=need){fin=true;fb.innerHTML+=' <b>Step complete.</b>';done({})}
+    else{$('[data-d="next"]',el).hidden=false;if(ok)timer=setTimeout(function(){if(el._tok===tok&&!fin&&answered)render()},1500)}}
+  el.onclick=function(e){
+    var h=e.target.closest('[data-d="hint"]');if(h){var bx=$('.hintbox',el);bx.textContent=cur.hintText||st.hintText||'';bx.hidden=false;return}
+    if(e.target.closest('[data-d="next"]')){clearTimeout(timer);render();return}
+    var a=e.target.closest('.ans');if(a&&!answered)answer(a.dataset.v)};
+  el._solve=function(wrong){if(fin)return true;if(answered){render()}var v=wrong?'__x':cur.correct;answer(v);return fin};
+  render()};
+
+RUN.build=function(el,st,done){
+  var tasks=st.tasks(),idx=0,T,placed,tool,res,wrong,okCount=0;
+  function expected(){var t=T.n>0?'s':'f';return stepsFor(T.clef,T.n).map(function(s){return{type:t,step:s}})}
+  function setup(){T=tasks[idx];placed=[];res=null;wrong=false;tool=T.raw?(T.n>0?'s':'f'):'s';render()}
+  function render(){
+    var exp=expected(),solved=res&&res.ok,ghost=(T.guide||wrong)&&!solved?exp:null,h=progBar(okCount,tasks.length)+'<p class="q">'+T.prompt+'</p>';
+    if(T.guide)h+='<p class="muted small">Guide: '+sigText(T.n)+'. Trace the dotted marks, left to right.</p>';
+    if(!T.raw)h+='<div class="row" style="margin-bottom:10px"><button class="btn ghost tool" data-t="s" aria-label="Sharp" style="'+(tool==='s'?'border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)':'')+'">♯</button><button class="btn ghost tool" data-t="f" aria-label="Flat" style="'+(tool==='f'?'border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)':'')+'">♭</button></div>';
+    h+=staffSVG({clef:T.clef,placed:placed,live:!solved,marks:res?res.marks:null,ghost:ghost});
+    h+='<div class="fb '+(res?(res.ok?'ok':'bad'):'')+'" aria-live="polite">'+(res?'<b>'+(res.ok?'Correct.':'Not quite.')+'</b> '+esc(res.msg):'')+'</div><div class="row">';
+    if(!solved){h+='<button class="btn ghost" data-b="undo">Undo</button><button class="btn ghost" data-b="clear">Clear</button>';h+=res&&!res.ok?'<button class="btn" data-b="retry">Try again</button>':'<button class="btn" data-b="check">Check</button>'}
+    else if(okCount<tasks.length)h+='<button class="btn" data-b="next">Next</button>';
+    el.innerHTML=h+'</div>'}
+  function check(){var exp=expected(),marks=placed.map(function(p,i){return exp[i]&&exp[i].type===p.type&&exp[i].step===p.step?'ok':'bad'}),ok=placed.length===exp.length&&marks.every(function(m){return m==='ok'});
+    var msg=ok?sigText(T.n)+'.':'Expected '+sigText(T.n)+'. The dotted marks show the right places.';
+    if(!ok&&placed.some(function(p){return p.type!==exp[0].type}))msg='This needs '+(T.n>0?'sharps':'flats')+'. '+msg;
+    res={ok:ok,marks:marks,msg:msg};if(ok)okCount++;else wrong=true;render();
+    if(ok&&okCount>=tasks.length){$('.fb',el).innerHTML+=' <b>Step complete.</b>';done({})}}
+  el.onclick=function(e){
+    var t=e.target.closest('[data-t]');if(t){tool=t.dataset.t;render();return}
+    var b=e.target.closest('[data-b]');if(b){var k=b.dataset.b;
+      if(k==='undo'){placed.pop();render()}else if(k==='clear'){placed=[];render()}else if(k==='check')check();else if(k==='retry'){placed=[];res=null;render()}else if(k==='next'){idx++;setup()}return}
+    var r=e.target.closest('.hit');if(r&&!(res&&res.ok)&&!(res&&!res.ok)&&placed.length<7){placed.push({type:tool,step:+r.dataset.step});render()}};
+  el._solve=function(wrong){if(res&&res.ok){if(okCount>=tasks.length)return true;idx++;setup()}
+    if(res&&!res.ok){placed=[];res=null}
+    placed=expected().slice();if(wrong)placed=placed.slice(0,-1);res=null;check();return okCount>=tasks.length};
+  setup()};
+
+RUN.kb=function(el,st,done){
+  var tasks=st.tasks(),idx=0,T,seq,last,missed,sel,fin,hintOn,fails,okCount=0,kb;
+  el.innerHTML='<div class="lsprog"><div class="bar"><i></i></div><span class="num"></span></div><div class="kp"></div><div class="notes kn"></div><div class="kbx"></div><div class="fb kf" aria-live="polite"></div><div class="row kbtn"></div>';
+  kb=makeKB($('.kbx',el),function(m){press(m)});
+  function start(){T=tasks[idx];seq=[];last=null;missed=false;sel=[];fin=false;hintOn=false;fails=0;render()}
+  function render(){
+    setBar(el,okCount,tasks.length);
+    $('.kp',el).innerHTML='<p class="q">'+T.prompt+'</p>';
+    $('.kn',el).innerHTML=T.mode==='seq'?T.names.map(function(n,i){var on=i<seq.length;return'<span class="note'+(on?' on':'')+'">'+((on||hintOn||fin)?n:'·')+'</span>'}).join(' '):'';
+    kb.sel(sel);kb.hints(hintOn||fails>=2?T.pcs:null);
+    var b='';if(!fin){if(T.mode==='set')b+='<button class="btn" data-k="check">Check</button><button class="btn ghost" data-k="clear">Clear</button>';else b+='<button class="btn ghost" data-k="restart">Restart</button>';if(st.hints)b+='<button class="btn ghost" data-k="hint">'+(hintOn?'Hide':'Show me')+'</button>'}
+    else if(okCount<tasks.length)b='<button class="btn" data-k="next">Next</button>';
+    $('.kbtn',el).innerHTML=b}
+  function win(msg){fin=true;okCount++;var f=$('.kf',el);f.className='fb kf ok';f.innerHTML='<b>Correct.</b> '+msg+(okCount>=tasks.length?' <b>Step complete.</b>':'');render();if(okCount>=tasks.length)done({})}
+  function press(m){tone(m);if(fin)return;
+    if(T.mode==='set'){var i=sel.indexOf(m);if(i>=0)sel.splice(i,1);else sel.push(m);kb.sel(sel);return}
+    var pc=m%12,want=T.pcs[seq.length],asc=last===null||m>last,f=$('.kf',el);
+    if(pc===want&&asc){seq.push(pc);last=m;kb.flash(m,'f-ok');f.className='fb kf';f.textContent='';
+      if(seq.length===T.pcs.length){win(T.names.join(' '));return}}
+    else{missed=true;kb.flash(m,'f-bad');f.className='fb kf bad';f.innerHTML='<b>Expected '+T.names[seq.length]+'.</b> '+(asc?'Restart from the first note.':'Play upward.');seq=[];last=null;if(pc===T.pcs[0]){seq=[pc];last=m}}
+    render()}
+  function check(){var pcs=[];sel.forEach(function(m){if(pcs.indexOf(m%12)<0)pcs.push(m%12)});
+    var ok=pcs.length===T.pcs.length&&T.pcs.every(function(p){return pcs.indexOf(p)>=0}),f=$('.kf',el);
+    if(ok){win((T.chordName?T.chordName+' = ':'')+T.names.join(' '))}
+    else{fails++;f.className='fb kf bad';f.innerHTML='<b>Not quite.</b> '+(fails>=2?'The highlighted keys are the notes: '+T.names.join(' ')+'.':'Count the notes and check the spelling.');if(fails>=2)kb.hints(T.pcs)}}
+  el.onclick=function(e){var b=e.target.closest('[data-k]');if(!b)return;var k=b.dataset.k;
+    if(k==='check')check();else if(k==='clear'){sel=[];kb.sel([])}else if(k==='restart'){seq=[];last=null;$('.kf',el).textContent='';render()}
+    else if(k==='hint'){hintOn=!hintOn;render()}else if(k==='next'){idx++;start()}};
+  el._solve=function(wrong){if(fin){if(okCount>=tasks.length)return true;idx++;start()}
+    if(T.mode==='set'){sel=wrong?[61]:T.pcs.map(function(pc){var m=60;while(m%12!==pc)m++;return m});check();if(wrong){sel=[];fails=0}return okCount>=tasks.length}
+    var cur=60;T.pcs.forEach(function(pc,i){var m=i===0?60:cur+1;while(m%12!==pc)m++;cur=m;press(m)});return okCount>=tasks.length};
+  start()};
+
+RUN.ear=function(el,st,done){
+  var tok=el._tok,need=st.n||6,correct=0,cur,answered,fin=false;
+  function ask(){cur=earMake(st.ekind,st.pool,st);answered=false;
+    el.innerHTML=progBar(correct,need)+'<p class="q">'+(st.ekind==='quality'?'What quality is this triad?':'Which progression? You hear the tonic chord first.')+'</p><div class="row" style="margin-bottom:12px"><button class="btn" data-e="play">▶ Play again</button></div>'
+      +earChoices(st.ekind,st.pool,st)+'<div class="fb" aria-live="polite"></div><div class="row"><button class="btn" data-e="next" hidden>Next</button></div>';
+    setTimeout(function(){if(el._tok===tok&&!answered)earPlay(cur)},150)}
+  el.onclick=function(e){
+    var a=e.target.closest('[data-e]');if(a){if(a.dataset.e==='play')earPlay(cur);else ask();return}
+    var b=e.target.closest('.ans');if(!b||answered)return;answered=true;var ok=b.dataset.v===earKey(cur);if(ok)correct++;
+    $$('.ans',el).forEach(function(x){x.disabled=true;if(x.dataset.v===earKey(cur))x.classList.add('ok');else if(x===b)x.classList.add('bad')});
+    var fb=$('.fb',el);fb.className='fb '+(ok?'ok':'bad');fb.innerHTML='<b>'+(ok?'Correct.':'Not quite.')+'</b> '+earReveal(cur);setBar(el,correct,need);
+    if(correct>=need){fin=true;fb.innerHTML+=' <b>Step complete.</b>';done({})}else $('[data-e="next"]',el).hidden=false};
+  el._solve=function(wrong){if(fin)return true;if(answered)ask();var key=earKey(cur),b=$$('.ans',el).filter(function(x){return wrong?x.dataset.v!==key:x.dataset.v===key})[0];b.click();return fin};
+  ask()};
+
+/* path list and lesson frame */
+var LS={les:null,si:0,finished:false};
+function renderPath(){
+  var firstOpen=-1;LESSONS.forEach(function(l,i){if(firstOpen<0&&!S.lessons[l.id])firstOpen=i});
+  var nd=LESSONS.filter(function(l){return S.lessons[l.id]}).length;
+  var h='<div class="card" style="margin-bottom:14px"><h2>Learning path</h2><p style="margin:0 0 4px">Each lesson starts with a short explanation, then practice that goes from hints to unaided. Go in order; skip ahead if you already know a topic.</p><p class="muted small" style="margin:0">'+nd+' of '+LESSONS.length+' lessons done.</p></div><div class="pathlist">';
+  LESSONS.forEach(function(l,i){var d=!!S.lessons[l.id];
+    h+='<button class="les'+(d?' done':'')+(i===firstOpen?' next':'')+'" data-lesson="'+l.id+'"><span class="no">'+(d?'✓':(i+1))+'</span><span><b>'+l.title+'</b><br><span class="muted small">'+l.goal+'</span></span><span class="tag">'+(i===firstOpen?'Next up':d?'Review':'')+'</span></button>'});
+  $('#pathList').innerHTML=h+'</div>';$('#pathList').hidden=false;$('#lessonView').hidden=true;CLEFS=['treble','bass']}
+function openLesson(id){LS.les=LESSONS.filter(function(l){return l.id===id})[0];LS.si=0;LS.finished=false;$('#pathList').hidden=true;$('#lessonView').hidden=false;renderFrame()}
+function renderFrame(){
+  var les=LS.les,st=les.steps[LS.si],idx=LESSONS.indexOf(les);
+  CLEFS=st.clefs||['treble','bass'];
+  var dots=les.steps.map(function(s,i){return'<i class="'+(i<LS.si?'done':i===LS.si?'on':'')+'"></i>'}).join('');
+  $('#lessonView').innerHTML='<div class="card"><div class="row" style="justify-content:space-between;margin-bottom:10px"><button class="btn ghost" data-ls="back">← Lessons</button><span class="num">Lesson '+(idx+1)+' of '+LESSONS.length+'</span></div><h2>'+les.title+'</h2><div class="dots">'+dots+'</div><p class="tag">'+(st.label||'')+'</p><div id="lsStep"></div><div class="row" id="lsNav" style="margin-top:14px"></div></div>';
+  var el=$('#lsStep');el._tok=++RUNID;LS.finished=false;
+  RUN[st.kind](el,st,stepDone)}
+function stepDone(info){
+  if(LS.finished)return;LS.finished=true;
+  if(info&&info.auto){LS.si++;renderFrame();return}
+  var last=LS.si===LS.les.steps.length-1;
+  $('#lsNav').innerHTML='<button class="btn" data-ls="'+(last?'finish':'cont')+'">'+(last?'Finish lesson':'Continue')+'</button>'}
+$('#pathList').addEventListener('click',function(e){var b=e.target.closest('[data-lesson]');if(b)openLesson(b.dataset.lesson)});
+$('#lessonView').addEventListener('click',function(e){var b=e.target.closest('[data-ls]');if(!b)return;var k=b.dataset.ls;
+  if(k==='back')renderPath();
+  else if(k==='cont'){LS.si++;renderFrame()}
+  else if(k==='finish'){S.lessons[LS.les.id]={done:1,t:Date.now()};save();renderPath()}});
+
+/* ---------- init ---------- */
+renderDeckChips();nextCard();newBuild();E.cur=earMake(E.kind,E.pool);renderEar();renderRef();
+var h0=(location.hash||'').replace('#','');
+showTab(TABS.some(function(t){return t[0]===h0})?h0:'path');
+window.__kcg={S:S,LS:function(){return LS},LESSONS:LESSONS,staffSVG:staffSVG,B:B,K:K,E:E,F:F,spell:spell,chordsOfKey:chordsOfKey,stepsFor:stepsFor,KEYS:KEYS,pcOf:pcOf,sigText:sigText,ALL:ALL};
+})();
+</script>
+
+</body>
+</html>
